@@ -7,5 +7,5 @@ var data = JSON.parse(fs.readFileSync('data.json'))
 var template = Handlebars.compile(source);
 var result = template(data)
 
-fs.writeFileSync("handlebars.html", result)
+fs.writeFileSync("result.html", result)
 //console.log(result)
