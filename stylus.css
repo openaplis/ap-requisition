@@ -12,18 +12,28 @@ body {
   page-break-after: auto;
   overflow: hidden;
 }
+p {
+  display: inline;
+  letter-spacing: 0.1mm;
+}
 .box {
   height: 35mm;
   width: 217mm;
+  border-left: none;
+  border-bottom: none;
 }
 .accession {
   float: right;
-  width: 26mm;
   height: 10mm;
+  width: 26mm;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
+  floatDirection: float;
+  BackgroundColor: background-color;
+  lineHeight: line-height;
+  textColor: color;
   font-size: 3mm;
   border-top: 1px solid #a95346;
-  border-right: 1px solid #a95346;
-  border-left: 1px solid #a95346;
   color: #a95346;
   letter-spacing: 0.15mm;
 }
@@ -32,6 +42,9 @@ body {
   text-align: center;
   color: #a95346;
   height: 8mm;
+  width: 217mm;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
   font-size: 5mm;
   padding: 1mm;
   font-weight: bold;
@@ -42,6 +55,28 @@ body {
   text-align: center;
   background: #a95346;
   height: 5mm;
+  width: 217mm;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
   font-size: 4.5mm;
   font-weight: bold;
+}
+.one {
+  float: left;
+  height: 6mm;
+  width: 25mm;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
+  color: #a95346;
+  line-height: 0.68;
+}
+.two {
+  float: left;
+  height: 6mm;
+  width: 65.15mm;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
+  color: #a95346;
+  line-height: 0.68;
+  background-color: #f9edef;
 }

@@ -1,9 +1,24 @@
 red = #a95346
+orange = #f9edef
 
+box(x, y, borderLeft = 1px solid red, borderBottom = 1px solid red)
+  height: x
+  width: y
+  border-left: borderLeft
+  border-bottom: borderBottom
 
+paragraph(fontSize = 3mm, displayType = inline, letterSpacing = .1mm)
+  display: displayType
+  letter-spacing: letterSpacing
+
+fill(floatDirection, backgroundColor, lineHeight, textColor = red)
+  floatDirection: float
+  BackgroundColor: background-color
+  lineHeight: line-height
+  textColor: color
 
 html, body
-        background black
+  background black
 
 .page
   position relative
@@ -15,39 +30,48 @@ html, body
   page-break-after auto
   overflow hidden
 
+p
+  paragraph()
 
 .box
-  height 35mm
-  width 217mm
+  box(35mm, 217mm, none, none)
 
 .accession
   float right
-  width 26mm
-  height 10mm
+  box(10mm, 26mm)
+  fill(right, white, 1)
   font-size 3mm
   border-top 1px solid red
-  border-right 1px solid red
-  border-left 1px solid red
   color red
   letter-spacing .15mm
-
-
 
 .title
   position relative
   text-align center
   color red
-  height 8mm
+  box(8mm, 217mm)
   font-size 5mm
   padding 1mm
   font-weight bold
-
 
 .subtitle
   color white
   position relative
   text-align center
   background red
-  height 5mm
+  box(5mm, 217mm)
   font-size 4.5mm
   font-weight bold
+
+.one
+  float left
+  box(6mm, 25mm)
+  color red
+  line-height 0.68
+
+.two
+  float left
+  box(6mm, 65.15mm)
+  color red
+  line-height 0.68
+  background-color: orange
