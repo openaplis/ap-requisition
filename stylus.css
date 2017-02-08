@@ -13,6 +13,7 @@ body {
   overflow: hidden;
 }
 p {
+  font-size: 3mm;
   display: inline;
   letter-spacing: 0.1mm;
 }
@@ -23,60 +24,134 @@ p {
   border-bottom: none;
 }
 .accession {
-  float: right;
   height: 10mm;
   width: 26mm;
   border-left: 1px solid #a95346;
   border-bottom: 1px solid #a95346;
-  floatDirection: float;
-  BackgroundColor: background-color;
-  lineHeight: line-height;
-  textColor: color;
-  font-size: 3mm;
   border-top: 1px solid #a95346;
+  float: right;
+  background-color: #fff;
+  line-height: 1;
+  text-align: left;
+  font-weight: none;
+  font-size: 3mm;
   color: #a95346;
-  letter-spacing: 0.15mm;
+  letter-spacing: 0.1mm;
 }
 .title {
   position: relative;
-  text-align: center;
-  color: #a95346;
+  padding: 1mm;
   height: 8mm;
   width: 217mm;
   border-left: 1px solid #a95346;
   border-bottom: 1px solid #a95346;
-  font-size: 5mm;
-  padding: 1mm;
+  line-height: 1.5;
+  text-align: center;
   font-weight: bold;
+  font-size: 5mm;
+  color: #a95346;
+  letter-spacing: 0.1mm;
 }
 .subtitle {
-  color: #fff;
   position: relative;
+  line-height: 1.25;
   text-align: center;
-  background: #a95346;
+  font-weight: bold;
+  font-size: 4.5mm;
+  color: #fff;
+  letter-spacing: 0.1mm;
+  float: none;
+  background-color: #a95346;
   height: 5mm;
   width: 217mm;
   border-left: 1px solid #a95346;
   border-bottom: 1px solid #a95346;
-  font-size: 4.5mm;
-  font-weight: bold;
 }
 .one {
   float: left;
+  background-color: #fff;
   height: 6mm;
   width: 25mm;
   border-left: 1px solid #a95346;
   border-bottom: 1px solid #a95346;
+  line-height: 1;
+  text-align: left;
+  font-weight: 0.68;
+  font-size: 3mm;
   color: #a95346;
-  line-height: 0.68;
+  letter-spacing: 0.1mm;
 }
 .two {
-  float: left;
   height: 6mm;
   width: 65.15mm;
   border-left: 1px solid #a95346;
   border-bottom: 1px solid #a95346;
-  color: #a95346;
-  line-height: 0.68;
+  float: left;
   background-color: #f9edef;
+}
+.three {
+  height: 6mm;
+  width: 10mm;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
+  float: left;
+  background-color: #fff;
+  line-height: 2;
+  text-align: left;
+  font-weight: none;
+  font-size: 3mm;
+  color: #a95346;
+  letter-spacing: 0.1mm;
+}
+.four {
+  height: 6mm;
+  width: 52mm;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
+  float: left;
+  background-color: #f9edef;
+}
+.five {
+  height: 6mm;
+  width: 6.4mm;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
+  float: left;
+  background-color: #fff;
+  line-height: 2;
+  text-align: none;
+  font-weight: none;
+  font-size: 3mm;
+  color: #a95346;
+  letter-spacing: 0.1mm;
+}
+.six {
+  height: 6mm;
+  width: 9mm;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
+  float: left;
+  background-color: #f9edef;
+}
+.seven {
+  height: 6mm;
+  width: 15mm;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
+  float: left;
+  background-color: #fff19c;
+  line-height: 1;
+  text-align: none;
+  font-weight: none;
+  font-size: 3mm;
+  color: #a95346;
+  letter-spacing: 0.1mm;
+}
+.eight {
+  height: 6mm;
+  width: 32mm;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
+  float: left;
+  background-color: #fff19c;
 }

@@ -2,5 +2,8 @@
   "accession": "YPI Accession #",
   "title": "Women's Health",
   "subtitle": "PATIENT INFORMATION",
-  "patientName": "Patient's Name: (Last)"
+  "patientName": "Patient's Name: (Last)",
+  "firstName": "(First)",
+  "middleName": "(MI)",
+  "orderingProvider": "Ordering Provider"
 }
