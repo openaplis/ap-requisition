@@ -1,4 +1,4 @@
-var fs = require("fs");
+var fs = require("fs")
 var Handlebars = require('Handlebars')
 
 var source = fs.readFileSync('data.handlebars').toString()

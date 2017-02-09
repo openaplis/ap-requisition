@@ -13,9 +13,10 @@ paragraph(fontSize = 3mm, displayType = inline, letterSpacing = .1mm)
   display: displayType
   letter-spacing: letterSpacing
 
-fill(floatDirection, backgroundColor)
+fill(floatDirection, backgroundColor, paddingRight = 1mm)
   float: floatDirection
   background-color: backgroundColor
+  padding-right: paddingRight
 
 text(lineHeight, textAlign, fontWeight, fontSize = 3mm, textColor = red, letterSpacing = .1mm)
   line-height: lineHeight
@@ -56,45 +57,86 @@ p
   box(8mm, 217mm)
   text(1.5, center, bold, 5mm)
 
-
 .subtitle
   position relative
   text(1.25, center, bold, 4.5mm, white)
   fill(none, red)
   box(5mm, 217mm)
 
+.lineOne {
+  background: pink
+}
+
+
 .one
   fill(left, white)
   box(6mm, 25mm)
-  text(1, left, 0.68)
+  text(1, right, 0.68)
 
 .two
-  box(6mm, 65.15mm)
+  box(6mm, 65mm)
   fill(left, orange)
 
 .three
   box(6mm, 10mm)
   fill(left, white)
-  text(2, left, none)
+  text(2, right, none)
 
 .four
-  box(6mm, 52mm)
+  box(6mm, 50mm)
   fill(left, orange)
 
 .five
-  box(6mm, 6.4mm)
+  box(6mm, 6mm)
   fill(left, white)
   text(2, none, none)
 
 .six
-  box(6mm, 9mm)
+  box(6mm, 8mm)
   fill(left, orange)
 
 .seven
-  box(6mm, 15mm)
+  box(6mm, 12mm)
   fill(left, yellow)
   text(1, none, none)
 
 .eight
-  box(6mm, 32mm)
+  box(6mm, 30mm)
   fill(left, yellow)
+
+.lineTwo
+  .one
+    fill(left, white)
+    box(6mm, 20mm)
+    text(2, right, 0.68)
+  .two
+    box(6mm, 19mm)
+    fill(left, white)
+  .three
+    fill(left, white)
+    box(6mm, 8.5mm)
+    text(2, right, 0.68)
+  .four
+    box(6mm, 8mm)
+    fill(left, white)
+  .five
+    fill(left, white)
+    box(6mm, 8.5mm)
+    text(2, right, 0.68)
+  .six
+    box(6mm, 38mm)
+    fill(left, white)
+  .seven
+    fill(left, white)
+    box(6mm, 10mm)
+    text(2, right, 0.68)
+  .eight
+    box(6mm, 35mm)
+    fill(left, white)
+  .nine
+    fill(left, yellow)
+    box(6mm, 12mm)
+    text(2, right, 0.68)
+  .ten
+    box(6mm, 44mm)
+    fill(left, yellow)
