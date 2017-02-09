@@ -1,6 +1,6 @@
 html,
 body {
-  background: #000;
+  background: #fff;
 }
 .page {
   position: relative;
@@ -12,36 +12,19 @@ body {
   page-break-after: auto;
   overflow: hidden;
 }
-.box {
-  height: 35mm;
+.row {
+  height: 20mm;
   width: 217mm;
 }
-.accession {
-  float: right;
-  width: 26mm;
-  height: 10mm;
+.box {
+  height: 20mm;
   font-size: 3mm;
   border-top: 1px solid #a95346;
   border-right: 1px solid #a95346;
   border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
   color: #a95346;
   letter-spacing: 0.15mm;
-}
-.title {
-  position: relative;
-  text-align: center;
-  color: #a95346;
-  height: 8mm;
-  font-size: 5mm;
-  padding: 1mm;
-  font-weight: bold;
-}
-.subtitle {
-  color: #fff;
-  position: relative;
-  text-align: center;
-  background: #a95346;
-  height: 5mm;
-  font-size: 4.5mm;
-  font-weight: bold;
+  float: left;
+  display: inline-block;
 }
