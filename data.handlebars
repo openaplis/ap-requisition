@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylus.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="" style="height: 35mm; width: 217mm"></div>
+      <div class="heading" style="background-color: white; line-height: 1.5; font-size: 5mm; display: inline-block">{{title}}</div>
+      <div class="heading" style="color: white; line-height: 1.25; font-size: 4.5mm; padding-top: 0.5mm;">{{subtitle}}</div>
+      <div class="row">
+        <div class="box" style="width: 25mm; line-height: 1; background-color: #f9edef;">{{patientName}}</div>
+        <div class="box" style="width: 65mm;"></div>
+        <div class="box" style="width: 10mm; background-color: #f9edef">{{firstName}}</div>
+        <div class="box" style="width: 50mm;"></div>
+        <div class="box" style="width: 6mm; background-color: #f9edef">{{middleName}}</div>
+        <div class="box" style="width: 8.5mm;"></div>
+        <div class="box" style="width: 15mm; line-height: 1; background-color: #fff19c">{{orderingProvider}}</div>
+        <div class="box" style="width: 35mm; background-color: #fff19c; border-right: 1px solid #a95346;"></div>
+      </div>
+      <div class="row">
+        <div class="box" style="width: 20mm; background-color: #f9edef">{{dateOfBirth}}</div>
+        <div class="box" style="width: 19mm;"></div>
+        <div class="box" style="width: 9mm; background-color: #f9edef">{{sex}}</div>
+        <div class="box" style="width: 8mm;"></div>
+        <div class="box" style="width: 9mm; background-color: #f9edef">{{socialSecurityNumber}}</div>
+        <div class="box" style="width: 40mm;"></div>
+        <div class="box" style="width: 12mm; background-color: #f9edef">{{phoneNumber}}</div>
+        <div class="box" style="width: 40mm;"></div>
+        <div class="box" style="width: 12mm; background-color: #fff19c">{{chartNumber}}</div>
+        <div class="box" style="width: 45mm; background-color: #fff19c; border-right: 1px solid #a95346;"></div>
+      </div>
+      <div class="row">
+        <div class="box" style="width: 28mm;">{{patientAddress}}</div>
+        <div class="box" style="width: 67mm; background-color: #f9edef"></div>
+        <div class="box" style="width: 8mm;">{{city}}</div>
+        <div class="box" style="width: 52mm; background-color: #f9edef"></div>
+        <div class="box" style="width: 6mm;">{{state}}</div>
+        <div class="box" style="width: 20.5mm; background-color: #f9edef"></div>
+        <div class="box" style="width: 7mm;">{{zipCode}}</div>
+        <div class="box" style="width: 26mm; background-color: #f9edef; border-right: 1px solid #a95346;"></div>
+      </div>
+      <div class="heading" style="color: white; line-height: 1.25; font-size: 4.5mm; padding-top: 0.5mm;">{{billingInfo}}</div>
+      <div class="row">
+        <div class="box" style="width: 33mm; border: none;">{{insurance}}</div>
+        <div class="box" style="width: 4mm; border: none;">
+          <div class="checkBox" style="border: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 8mm; border: none; text-align: left; padding-left: 1mm">{{ip}}</div>
+        <div class="box" style="width: 4mm; border: none;">
+          <div class="checkBox" style="border: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 13mm; border: none; text-align: left; padding-left: 1mm">{{op}}</div>
+        <div class="box" style="width: 4mm; border: none;">
+          <div class="checkBox" style="border: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 30mm; border: none; text-align: left; padding-left: 1mm">{{privatePractice}}</div>
+        <div class="box" style="width: 4mm; border: none;">
+          <div class="checkBox" style="border: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 38mm; border: none; text-align: left; padding-left: 1mm">{{hospitalOwned}}</div>
+        <div class="box" style="width: 4mm; border: none;">
+          <div class="checkBox" style="border: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 20mm; border: none; text-align: left; padding-left: 1mm">{{patientInsurance}}</div>
+        <div class="box" style="width: 4mm; border: none;">
+          <div class="checkBox" style="border: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 20mm; border: none; text-align: left; padding-left: 1mm">{{uninsured}}</div>
+        <div class="box" style="width: 4mm; border: none;">
+          <div class="checkBox" style="border: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 19.5mm; border: none; text-align: left; padding-left: 1mm;">{{medicare}}</div>
+      </div>
+      <div class="box" style="width: 217mm; border: none; text-align: center"><span class="highlight">{{demographics}}</span></div>
+      <div class="row">
+        <div class="box" style="width: 37mm; border: none; text-align: right; padding-left: 1mm;">{{primary}}</div>
+        <div class="box" style="width: 68mm; border: none;">
+          <div class="underLine" style="border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 40mm; text-align: right; border: none; text-align: left; padding-left: 1mm;">{{secondary}}</div>
+        <div class="box" style="width: 68mm; border: none;">
+          <div class="underLine" style="width: 65mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box" style="width: 15mm; border: none">{{insuranceID}}</div>
+        <div class="box" style="width: 33.75mm; border: none;">
+          <div class="underLine" style="width: 33.75mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 20mm; padding-left: 1mm; border: none;">{{insuranceGroup}}</div>
+        <div class="box" style="width: 33.75mm; padding-left: 1mm; border: none;">
+          <div class="underLine" style="width: 33.75mm;border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 15mm; padding-left: 1mm; border: none">{{insuranceID}}</div>
+        <div class="box" style="width: 35mm; padding-left: 1mm; border: none;">
+          <div class="underLine" style="width: 35mm;border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 20mm; padding-left: 1mm; border: none;">{{insuranceGroup}}</div>
+        <div class="box" style="width: 35mm; padding-left: 1mm; border: none;">
+          <div class="underLine" style="width: 35mm;border-bottom: 1px solid #a95346"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box" style="width: 32mm; border: none;">{{policyHolder}}</div>
+        <div class="box" style="width: 35mm; border: none;">
+          <div class="underLine" style="width: 35mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 20mm; border: none;">{{dateOfBirth}}</div>
+        <div class="box" style="width: 20mm; border: none;">
+          <div class="underLine" style="width: 20mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 32mm; border: none;">{{policyHolder}}</div>
+        <div class="box" style="width: 35mm; border: none;">
+          <div class="underLine" style="width: 35mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 20mm; border: none;">{{dateOfBirth}}</div>
+        <div class="box" style="width: 20mm; border: none;">
+          <div class="underLine" style="width: 20mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box" style="width: 15mm; border: none;">{{address}}</div>
+        <div class="box" style="width: 55mm; border: none;">
+          <div class="underLine" style="width: 55mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 15mm; border: none;">{{phoneNumber}}</div>
+        <div class="box" style="width: 20mm; border: none;">
+          <div class="underLine" style="width: 20mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 15mm; border: none;">{{address}}</div>
+        <div class="box" style="width: 55mm; border: none;">
+          <div class="underLine" style="width: 55mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 15mm; border: none;">{{phoneNumber}}</div>
+        <div class="box" style="width: 20mm; border: none;">
+          <div class="underLine" style="width: 20mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box" style="width: 10mm; border: none;">{{city}}</div>
+        <div class="box" style="width: 40mm; border: none;">
+          <div class="underLine" style="width: 40mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 8mm; border: none;">{{state}}</div>
+        <div class="box" style="width: 15mm; border: none;">
+          <div class="underLine" style="width: 15mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 8mm; border: none;">{{zipCode}}</div>
+        <div class="box" style="width: 25mm; border: none;">
+          <div class="underLine" style="width: 25mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 10mm; border: none;">{{city}}</div>
+        <div class="box" style="width: 40mm; border: none;">
+          <div class="underLine" style="width: 40mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 8mm; border: none;">{{state}}</div>
+        <div class="box" style="width: 15mm; border: none;">
+          <div class="underLine" style="width: 15mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+        <div class="box" style="width: 8mm; border: none;">{{zipCode}}</div>
+        <div class="box" style="width: 25mm; border: none;">
+          <div class="underLine" style="width: 25mm; border-bottom: 1px solid #a95346"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box" style="width: 102.5mm; height: 56.75mm; border-left: 4mm solid #a95346;; border-top: 2mm solid #a95346; border-bottom: none;">
+
+          <div class="row">
+            <div class="box" style="width: 25mm; border-bottom: 1mm solid; #a95346; border-left: none; padding-left: 15mm; font-weight: bold; line-height: 1.25; letter-spacing: .1mm; font-size: 4.5mm">{{test}}</div>
+
+            <div class="box" style="width: 6mm; border-bottom: 1mm solid; border-left: none; padding-left: 10mm; border-bottom: 1mm solid #a95346">
+              <div class="checkBox" style="width: 3mm; height: 3mm; border: 1px solid #a95346"></div>
+            </div>
+
+            <div class="box" style="width: 10mm; border-bottom: 1mm solid #a95346; border-left: none; font-weight: bold; line-height: 1.25; letter-spacing: .1mm; font-size: 4.5mm">{{yes}}</div>
+
+            <div class="box" style="width: 6mm; border-bottom: 1mm solid #a95346; border-left: none; padding-left: 10mm;">
+              <div class="checkBox" style="width: 3mm; height:3mm; border: 1px solid #a95346"></div>
+            </div>
+
+            <div class="box" style="width: 10mm; border-bottom: 1mm solid #a95346; border-left: none; padding-right: 10.5mm; font-weight: bold; line-height: 1.25; letter-spacing: .1mm; font-size: 4.5mm">{{no}}</div>
+          </div>
+        </div>
+
+
+
+        <div class="box" style="width: 102.5mm; height: 55mm; border-right: 4mm solid #a95346; border-left: 4mm solid #a95346; border-top: 2mm solid #a95346; border-bottom: 2mm solid #a95346;">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="box" style="width: 104.5mm; height: 55mm; border-left: 4mm solid #a95346; border-bottom: 5mm solid #a95346; border-bottom: none;">
+
+        </div>
+        <div class="box" style="width: 104.5mm; height: 55mm; border-right: 4mm solid #a95346; border-left: none; border-bottom: none;">
+
+        </div>
+      </div>
+      <div class="box" style="width: 217mm; font-weight: bold; text-align: center; border: none;background: #a95346; color: white; line-height: 1.25; letter-spacing: .1mm; font-size: 4.5mm; padding-top: 0.5mm;">{{biopsy}}</div>
+    </div>
+  </body>
+</html>

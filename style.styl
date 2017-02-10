@@ -1,12 +1,14 @@
-<<<<<<< HEAD
-=======
 red = #a95346
-rowHeight = 20mm
+orange = #f9edef
+yellow = #fff19c
+
+rowHeight = 6mm
 pageWidth = 217mm
 pageHeight = 278mm
 
+
 html, body
-  background white
+  background black
 
 .page
   position relative
@@ -22,15 +24,41 @@ html, body
   height rowHeight
   width pageWidth
 
+.heading
+  position relative
+  height rowHeight
+  width pageWidth
+  background red
+  font-weight bold
+  text-align center
+  letter-spacing .1mm
+  color red
+
 .box
   height rowHeight
   font-size 3mm
-  border-top 1px solid red
-  border-right 1px solid red
+  line-height 2
   border-left 1px solid red
   border-bottom 1px solid red
   color red
-  letter-spacing .15mm
+  letter-spacing .1mm
   float left
   display inline-block
->>>>>>> 0378a2088bb0f8c66e4ac620cc8574332ad5bfc1
+  text-align center
+
+.checkBox
+  width 2mm
+  height 2mm
+  background-color white
+  box-shadow 2px 2px #a95346
+  position relative
+  display inline-block
+
+.underLine
+  height 4mm
+  width 68mm
+  position relative
+  display inline-block
+
+span.highlight
+  background-color yellow
