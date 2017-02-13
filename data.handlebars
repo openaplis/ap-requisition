@@ -7,7 +7,9 @@
   </head>
   <body>
     <div class="page">
-      <div class="" style="height: 35mm; width: 217mm"></div>
+
+{{!patient information section}}
+      <div class="box" style="height: 35mm; width: 217mm"></div>
       <div class="heading" style="background-color: white; line-height: 1.5; font-size: 5mm; display: inline-block">{{title}}</div>
       <div class="heading" style="color: white; line-height: 1.25; font-size: 4.5mm; padding-top: 0.5mm;">{{subtitle}}</div>
       <div class="row">
@@ -42,6 +44,8 @@
         <div class="box" style="width: 7mm;">{{zipCode}}</div>
         <div class="box" style="width: 26mm; background-color: #f9edef; border-right: 1px solid;"></div>
       </div>
+
+{{!billing information section}}
       <div class="heading" style="color: white; line-height: 1.25; font-size: 4.5mm; padding-top: 0.5mm;">{{billingInfo}}</div>
       <div class="row">
         <div class="box" style="width: 33mm; border: none;">{{insurance}}</div>
@@ -168,7 +172,7 @@
 
 
       <div class="row">
-{{!--top left box of center section}}
+{{!top left box of center section}}
         <div class="box" style="width: 102.5mm; height: 56.75mm; border-left: 4mm solid;; border-top: 2mm solid; border-bottom: none;">
           <div class="box" style="width: 25mm; border-bottom: 1mm solid; border-left: none; padding-left: 15mm; font-weight: bold; line-height: 1.25; letter-spacing: .1mm; font-size: 4.5mm">{{test}}</div>
           <div class="box" style="width: 6mm; border-bottom: 1mm solid; border-left: none; padding-left: 10mm; border-bottom: 1mm solid">
@@ -185,7 +189,7 @@
           <div class="box" style="width: 50mm; border: none; line-height: 1.25; letter-spacing: .1mm; font-size: 3mm; text-decoration: underline; font-weight: bold; text-align: left; padding-left: 1mm;">{{specimenType}}</div>
 
 
-          <div class="row" style="width: 98mm">
+          <div class="box" style="width: 97.5mm; border: none">
             <div class="box" style="width: 5mm; border: none;">
               <div class="checkBox" style="border: 1px solid "></div>
             </div>
@@ -193,10 +197,10 @@
             <div class="box" style="width: 5mm; border: none;">
               <div class="checkBox" style="border: 1px solid "></div>
             </div>
-            <div class="box" style="width: 43mm; height: 4mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;">{{thinPrep}}</div>
-            </div>
+            <div class="box" style="width: 40mm; height: 4mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;">{{thinPrep}}</div>
+          </div>
 
-          <div class="row" style="width: 98mm">
+          <div class="box" style="width: 97.5mm; border: none">
             <div class="box" style="width: 5mm; border: none;">
               <div class="checkBox" style="border: 1px solid "></div>
             </div>
@@ -204,7 +208,18 @@
             <div class="box" style="width: 5mm; border: none;">
               <div class="checkBox" style="border: 1px solid "></div>
             </div>
-            <div class="box" style="width: 43mm; height: 4mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;">{{thinPrep}}</div>
+            <div class="box" style="width: 40mm; height: 4mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;">{{thinPrep}}</div>
+          </div>
+
+          <div class="box" style="width: 97.5mm; border: none">
+            <div class="box" style="width: 5mm; border: none;">
+              <div class="checkBox" style="border: 1px solid "></div>
+            </div>
+            <div class="box" style="width: 45mm; height: 4mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;">{{vaginal}}</div>
+            <div class="box" style="width: 5mm; border: none;">
+              <div class="checkBox" style="border: 1px solid "></div>
+            </div>
+            <div class="box" style="width: 40mm; height: 4mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;">{{thinPrep}}</div>
           </div>
         </div>
 
@@ -212,34 +227,55 @@
 
 
 
-{{!--top right box of center section}}
+{{!top right box of center section}}
         <div class="box" style="width: 102.5mm; height: 55mm; border-right: 4mm solid; border-left: 4mm solid; border-top: 2mm solid; border-bottom: 2mm solid;">
           <div class="box" style="width: 102.5mm; border: none; font-weight: bold; line-height: 1.25; letter-spacing: .1mm; font-size: 4.5mm; background-color: #fff19c">{{additionalTesting}}</div>
             <div class="box" style="width: 102.5mm; height: 4mm;border: none; font-weight: bold; font-size: 2.5mm; line-height: 1.5; letter-spacing: .1mm; background-color: #fff19c; border-bottom: 1mm solid;">{{cannotProcess}}</div>
             <div class="box" style="width: 20mm; height: 5mm;border: none; font-weight: bold; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: center; padding-left: 1mm; text-decoration: underline;">{{hpvTesting}}</div>
             <div class="box" style="width: 80mm; height: 5mm;border: none; font-weight: bold; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;">{{screening}}</div>
 
-            <div class="box" style="width: 6mm; border: none;">
-              <div class="checkBox" style="border: 1px solid "></div>
+            <div class="box" style="width: 97.5mm; border: none">
+              <div class="box" style="width: 5mm; border: none;">
+                <div class="checkBox" style="border: 1px solid "></div>
+              </div>
+
+              <div class="box" style="width: 46mm; height: 5mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;">{{routineHpv}}</div>
+              <div class="box" style="width: 46mm; height: 5mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;"></div>
             </div>
 
-            <div class="box" style="width: 46mm; height: 5mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;">{{routineHpv}}</div>
-            <div class="box" style="width: 46mm; height: 5mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;"></div>
+            <div class="box" style="width: 97.5mm; border: none">
+              <div class="box" style="width: 5mm; border: none;">
+                <div class="checkBox" style="border: 1px solid "></div>
+              </div>
 
-            <div class="box" style="width: 5mm; border: none;">
-              <div class="checkBox" style="border: 1px solid "></div>
-            </div>
-
-            <div class="row" style="width: 98mm">
               <div class="box" style="width: 43mm; height: 5mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left; padding: none">{{ascusOnly}}</div>
 
               <div class="box" style="width: 5mm; border: none;">
                 <div class="checkBox" style="border: 1px solid "></div>
               </div>
 
-              <div class="box" style="width: 5mm; height: 5mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;">{{dx}}</div>
+            <div class="box" style="width: 5mm; height: 5mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;">{{dx}}</div>
               <div class="underLine" style="width: 30mm;border-bottom: 1px solid "></div>
           </div>
+
+          <div class="box" style="width: 97.5mm; border: none">
+            <div class="box" style="width: 5mm; border: none;">
+              <div class="checkBox" style="border: 1px solid "></div>
+            </div>
+
+            <div class="box" style="width: 43mm; height: 5mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left; padding: none">{{ascusOnly}}</div>
+
+            <div class="box" style="width: 5mm; border: none;">
+              <div class="checkBox" style="border: 1px solid "></div>
+            </div>
+
+
+
+
+          <div class="box" style="width: 5mm; height: 5mm;border: none; font-size: 3mm; line-height: 2; letter-spacing: .1mm; text-align: left;">{{dx}}</div>
+            <div class="underLine" style="width: 30mm;border-bottom: 1px solid "></div>
+        </div>
+
         </div>
       </div>
 
@@ -247,7 +283,7 @@
 
 
       <div class="row">
-{{!--bottom left box of center section}}
+{{!bottom left box of center section}}
         <div class="box" style="width: 104.5mm; height: 55mm; border-left: 4mm solid; border-bottom: 5mm solid; border-bottom: none;">
           <div class="box" style="width: 12mm; border: none; font-weight: bold; line-height: 1.25; letter-spacing: .1mm; font-size: 4.5mm; text-align: right;">{{lmp}}</div>
           <div class="box" style="width: 25mm; padding-left: 1mm; border: none;">
@@ -275,7 +311,7 @@
 
 
 
-{{!--bottom right box of center section}}
+{{!bottom right box of center section}}
         <div class="box" style="width: 104.5mm; height: 55mm; border-right: 4mm solid; border-left: none; border-bottom: none;">
           <div class="box" style="width: 5mm; border: none;">
             <div class="checkBox" style="border: 1px solid "></div>
