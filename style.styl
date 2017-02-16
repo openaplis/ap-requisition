@@ -2,6 +2,12 @@ red = #a95346
 orange = #f9edef
 yellow = #fff19c
 
+@media print
+  #header
+  #footer
+    display none
+
+
 rowHeight = 6mm
 pageWidth = 217mm
 pageHeight = 278mm
@@ -19,6 +25,7 @@ html, body
   background white
   page-break-after auto
   overflow hidden
+
 
 .row
   height rowHeight
@@ -59,6 +66,7 @@ html, body
   width 68mm
   position relative
   display inline-block
+  float left
 
 .highlight
   background-color yellow

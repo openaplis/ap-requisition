@@ -1,3 +1,9 @@
+@media print {
+  #header,
+  #footer {
+    display: none;
+  }
+}
 html,
 body {
   background: #000;
@@ -51,6 +57,7 @@ body {
   width: 68mm;
   position: relative;
   display: inline-block;
+  float: left;
 }
 .highlight {
   background-color: #fff19c;
