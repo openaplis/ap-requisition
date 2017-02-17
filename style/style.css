@@ -1,9 +1,11 @@
 @media print {
-   body {
-      -webkit-print-color-adjust: exact;
-   }
+  body {
+    -webkit-print-color-adjust: exact;
+  }
 }
-
+.checkBox {
+  -webkit-print-color-adjust: exact;
+}
 html,
 body {
   background: #000;
@@ -32,7 +34,7 @@ body {
   letter-spacing: 0.1mm;
   color: #a95346;
 }
-.box {
+.whiteBox {
   height: 6mm;
   font-size: 3mm;
   line-height: 2;
@@ -44,13 +46,39 @@ body {
   display: inline-block;
   text-align: center;
 }
+.brownBox {
+  height: 6mm;
+  font-size: 3mm;
+  line-height: 2;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
+  color: #a95346;
+  letter-spacing: 0.1mm;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  background-color: #f9edef;
+}
+.yellowBox {
+  height: 6mm;
+  font-size: 3mm;
+  line-height: 2;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
+  color: #a95346;
+  letter-spacing: 0.1mm;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  background-color: #fff19c;
+}
 .checkBox {
   width: 2mm;
   height: 2mm;
   background-color: #fff;
-  box-shadow: 2px 2px #a95346;
   position: relative;
   display: inline-block;
+  box-shadow: 2px 2px #a95346;
 }
 .underLine {
   height: 4mm;
