@@ -4,7 +4,8 @@
   "description": "Anatomic Pathology Requisition",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precompile": "handlebars -f template/template.js template/"
   },
   "repository": {
     "type": "git",
