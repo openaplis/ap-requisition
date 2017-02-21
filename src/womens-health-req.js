@@ -1,10 +1,13 @@
 var Handlebars = require('handlebars/runtime');
 var templates = require('./precompile-hbs.js');
 
-Handlebars.registerPartial('patientInfo', Handlebars.templates['patientInfo'])
-var template = Handlebars.templates['patientInfo']
+Handlebars.registerPartial('patientInfo', Handlebars.templates['partials/includes/patient-info'])
 
-console.log(template)
+var template = Handlebars.templates['pages/WomensHeatlhReq']
 
-//var result = template(d)
-//console.log(result)
+var d = {
+  title: 'hello world'
+}
+
+var result = template(d)
+console.log(result)
