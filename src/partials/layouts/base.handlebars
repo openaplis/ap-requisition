@@ -5,31 +5,107 @@
       {{#if title}}
         {{title}}
       {{else}}
-        Base Page Title
+        Open AP LIS Requisition
       {{/if}}
     </title>
-    <link rel="stylesheet" href="main.css">
-    {{#> head-block}}
-      {{!-- Custom <head> content per page could be added. --}}
-    {{/head-block}}
+    <style>
+      @media print {
+        body {
+          -webkit-print-color-adjust: exact;
+        }
+      }
+      .checkBox {
+        -webkit-print-color-adjust: exact;
+      }
+      html,
+      body {
+        background: #000;
+      }
+      .page {
+        position: relative;
+        height: 278mm;
+        width: 217mm;
+        font-family: 'Arial';
+        display: block;
+        background: #fff;
+        page-break-after: auto;
+        overflow: hidden;
+      }
+      .row {
+        height: 6mm;
+        width: 217mm;
+      }
+      .heading {
+        position: relative;
+        height: 6mm;
+        width: 217mm;
+        background: #a95346;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.1mm;
+        color: #a95346;
+      }
+      .whiteBox {
+        height: 6mm;
+        font-size: 3mm;
+        line-height: 2;
+        border-left: 1px solid #a95346;
+        border-bottom: 1px solid #a95346;
+        color: #a95346;
+        letter-spacing: 0.1mm;
+        float: left;
+        display: inline-block;
+        text-align: center;
+      }
+      .brownBox {
+        height: 6mm;
+        font-size: 3mm;
+        line-height: 2;
+        border-left: 1px solid #a95346;
+        border-bottom: 1px solid #a95346;
+        color: #a95346;
+        letter-spacing: 0.1mm;
+        float: left;
+        display: inline-block;
+        text-align: center;
+        background-color: #f9edef;
+      }
+      .yellowBox {
+        height: 6mm;
+        font-size: 3mm;
+        line-height: 2;
+        border-left: 1px solid #a95346;
+        border-bottom: 1px solid #a95346;
+        color: #a95346;
+        letter-spacing: 0.1mm;
+        float: left;
+        display: inline-block;
+        text-align: center;
+        background-color: #fff19c;
+      }
+      .checkBox {
+        width: 2mm;
+        height: 2mm;
+        background-color: #fff;
+        position: relative;
+        display: inline-block;
+        box-shadow: 2px 2px #a95346;
+      }
+      .underLine {
+        height: 4mm;
+        width: 68mm;
+        position: relative;
+        display: inline-block;
+        float: left;
+      }
+      .highlight {
+        background-color: #fff19c;
+      }
+    </style>
   </head>
   <body>
-    {{#> hero-block}}
-      {{!-- Hero content goes here. --}}
-    {{/hero-block}}
-
-    <footer>
-      {{#> footer-block}}
-        {{!--
-          The `includes/footer` partial is the default content,
-          but can be overridden.
-        --}}
-        {{> includes/footer }}
-      {{/footer-block}}
-    </footer>
-
-    {{#> scripts-block}}
-      {{!-- Custom scripts per page can be added. --}}
-    {{/scripts-block}}
+    {{#> content-block}}
+      {{!-- requisition content goes here. --}}
+    {{/content-block}}
   </body>
 </html>
