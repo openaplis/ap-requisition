@@ -6,10 +6,7 @@
 .checkBox {
   -webkit-print-color-adjust: exact;
 }
-html,
-body {
-  background: #000;
-}
+
 .page {
   position: relative;
   height: 278mm;
