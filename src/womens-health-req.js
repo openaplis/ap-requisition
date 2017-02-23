@@ -1,15 +1,14 @@
 var fs = require('fs')
 var Handlebars = require('handlebars/runtime');
+var templates = require('./hbs-precompile.js');
 
-var templates = require('./precompile-hbs.js');
-
-Handlebars.registerPartial('pages/WomensHealthReq', Handlebars.templates['pages/WomensHealthReq'])
-Handlebars.registerPartial('partials/layouts/base', Handlebars.templates['partials/layouts/base'])
-Handlebars.registerPartial('partials/includes/patient-info', Handlebars.templates['partials/includes/patient-info'])
-Handlebars.registerPartial('partials/includes/billing-info', Handlebars.templates['partials/includes/billing-info'])
-Handlebars.registerPartial('partials/includes/requisition-header', Handlebars.templates['partials/includes/requisition-header'])
-Handlebars.registerPartial('partials/includes/tissue-biopsy', Handlebars.templates['partials/includes/tissue-biopsy'])
-Handlebars.registerPartial('partials/includes/womens-health', Handlebars.templates['partials/includes/womens-health'])
+Handlebars.registerPartial('pages/womens-health-req', Handlebars.templates['pages/womens-health-req'])
+Handlebars.registerPartial('layouts/base', Handlebars.templates['layouts/base'])
+Handlebars.registerPartial('partials/patient-info', Handlebars.templates['partials/patient-info'])
+Handlebars.registerPartial('partials/billing-info', Handlebars.templates['partials/billing-info'])
+Handlebars.registerPartial('partials/requisition-header', Handlebars.templates['partials/requisition-header'])
+Handlebars.registerPartial('partials/tissue-biopsy', Handlebars.templates['partials/tissue-biopsy'])
+Handlebars.registerPartial('partials/womens-health', Handlebars.templates['partials/womens-health'])
 
 var template = Handlebars.templates['pages/WomensHealthReq']
 
