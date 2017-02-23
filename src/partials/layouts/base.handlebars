@@ -19,7 +19,7 @@
       }
       html,
       body {
-        background: #000;
+        background: white;
       }
       .page {
         position: relative;
@@ -104,8 +104,10 @@
     </style>
   </head>
   <body>
-    {{#> content-block}}
-      {{!-- requisition content goes here. --}}
-    {{/content-block}}
+    <div class="page">
+      {{#> content-block}}
+        {{!-- requisition content goes here. --}}
+      {{/content-block}}
+  </div>
   </body>
 </html>
