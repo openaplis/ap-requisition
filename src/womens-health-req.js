@@ -2,7 +2,7 @@ var fs = require('fs')
 var Handlebars = require('handlebars/runtime');
 var templates = require('./hbs-precompile.js');
 
-module.exports = class WomensHealthRea {
+module.exports = class WomensHealthReq {
   constructor () {
     Handlebars.registerPartial('pages/womens-health-req', Handlebars.templates['pages/womens-health-req'])
     Handlebars.registerPartial('layouts/base', Handlebars.templates['layouts/base'])
@@ -11,8 +11,6 @@ module.exports = class WomensHealthRea {
     Handlebars.registerPartial('partials/requisition-header', Handlebars.templates['partials/requisition-header'])
     Handlebars.registerPartial('partials/tissue-biopsy', Handlebars.templates['partials/tissue-biopsy'])
     Handlebars.registerPartial('partials/womens-health', Handlebars.templates['partials/womens-health'])
-
-    this.template = Handlebars.templates['pages/WomensHealthReq']
   }
 
   build(cb) {
@@ -20,6 +18,8 @@ module.exports = class WomensHealthRea {
       title: 'hello world'
     }
 
-    cb(this.template(d))    
+    var template = Handlebars.templates['pages/womens-health-req']
+    var result = template(d)
+    cb(result)
   }
 }
