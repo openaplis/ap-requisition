@@ -1,27 +1,29 @@
 {
   "name": "ap-requisition",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Anatomic Pathology Requisition",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precompile": "handlebars ./src -f ./src/hbs-precompile.js -c handlebars/runtime"
+    "precompile": "handlebars ./src -f ./src/precompile.js -c handlebars/runtime"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mjschuetze/ap-requisition.git"
   },
   "keywords": [
-    "requisition"
+    "requisition",
+    "Anatomic Pathology",
+    "LIS"
   ],
-  "author": "Mark Schuetze",
+  "author": "Sid Harder",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mjschuetze/ap-requisition/issues"
   },
   "homepage": "https://github.com/mjschuetze/ap-requisition#readme",
   "dependencies": {
-    "electron": "^1.4.15",
+    "fs-readdir-recursive": "^1.0.0",
     "handlebars": "^4.0.6",
     "stylus": "^0.54.5"
   }
