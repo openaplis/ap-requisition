@@ -1,3 +1,5 @@
+'use strict'
+
 var fs = require('fs')
 var Handlebars = require('handlebars/runtime');
 var templates = require(__dirname + '/views.js');
