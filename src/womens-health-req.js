@@ -13,8 +13,8 @@ module.exports = class WomensHealthReq {
     Handlebars.registerPartial('layouts/base', Handlebars.templates['layouts/base'])
     Handlebars.registerPartial('partials/patient-info', Handlebars.templates['partials/patient-info'])
     Handlebars.registerPartial('partials/billing-info', Handlebars.templates['partials/billing-info'])
-    Handlebars.registerPartial('partials/requisition-header', Handlebars.templates['partials/requisition-header'])
-    Handlebars.registerPartial('partials/tissue-biopsy', Handlebars.templates['partials/tissue-biopsy'])
+    Handlebars.registerPartial('womens-health-req/requisition-header', Handlebars.templates['womens-health-req/requisition-header'])
+    Handlebars.registerPartial('womens-health-req/tissue-biopsy', Handlebars.templates['womens-health-req/tissue-biopsy'])
   }
 
   build(cb) {
