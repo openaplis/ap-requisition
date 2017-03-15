@@ -7,6 +7,8 @@ var templates = require(__dirname + '/views.js');
 module.exports = class WomensHealthReq {
 
   constructor () {
+
+    Handlebars.registerPartial('womens-health-req/page', Handlebars.templates['style'])
     Handlebars.registerPartial('womens-health-req/page', Handlebars.templates['womens-health-req/page'])
     Handlebars.registerPartial('womens-health-req/content', Handlebars.templates['womens-health-req/content'])
 
