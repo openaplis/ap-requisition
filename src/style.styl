@@ -2,7 +2,10 @@ red = #a95346
 orange = #f9edef
 yellow = #fff19c
 
-rowHeight = 5mm
+fontA = font-size
+font-size = 3mm
+
+rowHeight = 6mm
 pageWidth = 217mm
 pageHeight = 278mm
 
@@ -16,7 +19,6 @@ pageHeight = 278mm
   position relative
   height pageHeight
   width pageWidth
-  font-family 'Arial'
   display block
   background white
   page-break-after auto
@@ -35,10 +37,24 @@ pageHeight = 278mm
   text-align center
   letter-spacing .1mm
   color red
+  line-height: 1.5;
+  font-size 4.5mm;
 
 .whiteBox
   height rowHeight
-  font-size 3mm
+  font-size fontA
+  line-height 2
+  border-left 1px solid red
+  border-bottom 1px solid red
+  color red
+  letter-spacing .1mm
+  float left
+  display inline-block
+  text-align center
+
+.oncoBox
+  height 4.75mm
+  font-size 2.75mm
   line-height 2
   border-left 1px solid red
   border-bottom 1px solid red
@@ -50,7 +66,7 @@ pageHeight = 278mm
 
 .brownBox
   height rowHeight
-  font-size 3mm
+  font-size fontA
   line-height 2
   border-left 1px solid red
   border-bottom 1px solid red
@@ -63,7 +79,7 @@ pageHeight = 278mm
 
 .yellowBox
   height rowHeight
-  font-size 3mm
+  font-size fontA
   line-height 2
   border-left 1px solid red
   border-bottom 1px solid red
@@ -80,6 +96,7 @@ pageHeight = 278mm
   background-color white
   position relative
   display inline-block
+  border 1px solid
 
 .underLine
   height 4mm

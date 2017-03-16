@@ -8,6 +8,7 @@ module.exports = class SurgicalReq {
 
   constructor () {
     Handlebars.registerPartial('surgical/page', Handlebars.templates['surgical/page'])
+    Handlebars.registerPartial('style', Handlebars.templates['style'])
 
     Handlebars.registerPartial('layouts/base', Handlebars.templates['layouts/base'])
     Handlebars.registerPartial('partials/patient-info', Handlebars.templates['partials/patient-info'])
