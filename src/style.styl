@@ -11,18 +11,27 @@ pageHeight = 278mm
 
 @media print
   body
+    width 8.5in
+    height 11in
     -webkit-print-color-adjust exact
   .checkBox
     -webkit-print-color-adjust exact
 
-.page
+html, body
+  background-color: white
+  margin: 0px
+
+@page
   position relative
-  height pageHeight
-  width pageWidth
   display block
   background white
   page-break-after auto
   overflow hidden
+  size 8.5in 11in
+  margin-top 0.25in
+  margin-left 0.25in
+  margin-right 0.25in
+  margin-bottom 0.125in
 
 .row
   height rowHeight
@@ -53,8 +62,8 @@ pageHeight = 278mm
   text-align center
 
 .oncoBox
-  height 4.75mm
-  font-size 2.75mm
+  height 4mm
+  font-size 2.5mm
   line-height 2
   border-left 1px solid red
   border-bottom 1px solid red

@@ -4,153 +4,36 @@
     <meta charset="utf-8">
     <title></title>
     <style>
-      @media print {
-        body {
-          -webkit-print-color-adjust: exact;
-        }
-      }
-      .checkBox {
-        -webkit-print-color-adjust: exact;
-      }
-      html,
+    @media print {
       body {
-        background: white;
+       font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+       font-size: 1em;
+       width: 8.5in;
+       height: 11in;
+       border: 1px solid black;
       }
-      .page {
-        position: relative;
-        height: 278mm;
-        width: 217mm;
-        font-family: 'Arial';
-        display: block;
-        background: #fff;
-        page-break-after: auto;
-        overflow: hidden;
+    }
+    @media screen {
+      body {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-size: 1em;
+        border: 1px solid black;
+        width: 50mm;
+        height: 200mm;
       }
-      .row {
-        height: 6mm;
-        width: 217mm;
-      }
-      .heading {
-        position: relative;
-        height: 5mm;
-        width: 217mm;
-        background: #a95346;
-        font-weight: bold;
-        text-align: center;
-        letter-spacing: 0.1mm;
-        color: #a95346;
-        line-height: 1;
-      }
-      .whiteBox {
-        height: 6mm;
-        font-size: 3mm;
-        line-height: 2;
-        border-left: 1px solid #a95346;
-        border-bottom: 1px solid #a95346;
-        color: #a95346;
-        letter-spacing: 0.1mm;
-        float: left;
-        display: inline-block;
-        text-align: center;
-      }
-      .brownBox {
-        height: 6mm;
-        font-size: 3mm;
-        line-height: 2;
-        border-left: 1px solid #a95346;
-        border-bottom: 1px solid #a95346;
-        color: #a95346;
-        letter-spacing: 0.1mm;
-        float: left;
-        display: inline-block;
-        text-align: center;
-        background-color: #f9edef;
-      }
-      .yellowBox {
-        height: 6mm;
-        font-size: 3mm;
-        line-height: 2;
-        border-left: 1px solid #a95346;
-        border-bottom: 1px solid #a95346;
-        color: #a95346;
-        letter-spacing: 0.1mm;
-        float: left;
-        display: inline-block;
-        text-align: center;
-        background-color: #fff19c;
-      }
-      .checkBox {
-        width: 2mm;
-        height: 2mm;
-        background-color: #fff;
-        position: relative;
-        display: inline-block;
-        box-shadow: 2px 2px #a95346;
-      }
-      .underLine {
-        height: 4mm;
-        width: 68mm;
-        position: relative;
-        display: inline-block;
-        float: left;
-      }
-      .highlight {
-        background-color: #fff19c;
-      }
+    }
+    @page {
+      size: 8.5in 11in;
+      margin-top: 0.125in;
+      margin-left: 0.125in;
+      margin-right: 0.25in;
+      margin-bottom: 0.125in;
+    }
+
+
     </style>
   </head>
   <body>
-    <div class="whiteBox" style="width: 216.5mm; height: 48mm; border-right: 1px solid; border-left: 1px solid; font-size: ">
-    <div class="heading" style="color: white; font-size: 4.5mm; padding-top: 0.5mm;">CLINICAL DATA</div>
-      <div class="yellowBox" style="width: 216.4mm; border: none; font-weight: bold;">
-        <div class="whiteBox" style="width: 28mm; border: none; font-size: 3.5mm;">Date of Service</div>
-        <div class="whiteBox" style="width: 25mm; border: none;">
-          <div class="underLine" style="width: 25mm; border-bottom: 1px solid"></div>
-        </div>
-        <div class="whiteBox" style="width: 28mm; border: none; text-align: left; padding-left: 1mm; font-size: 3.5mm;">Collection Time</div>
-        <div class="whiteBox" style="width: 15mm; border: none;">
-          <div class="underLine" style="width: 15mm; border-bottom: 1px solid"></div>
-        </div>
-        <div class="whiteBox" style="width: 7mm; border: none; text-align: left; padding-left: 1mm; font-size: 3.5mm;">am</div>
-        <div class="whiteBox" style="width: 7mm; border: none; text-align: left; padding-left: 1mm; font-size: 3.5mm;">pm</div>
-        <div class="whiteBox" style="width: 35mm; border: none; text-align: left; padding-left: 1mm; font-size: 3.5mm;">Ordering Physician</div>
-        <div class="whiteBox" style="width: 67mm; border: none;">
-          <div class="underLine" style="width: 67mm; border-bottom: 1px solid"></div>
-        </div>
-      </div>
-      <div class="whiteBox" style="width: 216.4mm; border: none;">
-        <div class="whiteBox" style="width: 22mm; border: none; text-align: right;">Clinical History:</div>
-        <div class="whiteBox" style="width: 194mm; border: none;">
-          <div class="underLine" style="width: 194mm; border-bottom: 1px solid"></div>
-        </div>
-      </div>
-      <div class="whiteBox" style="width: 216.4mm; border: none;">
-        <div class="whiteBox" style="width: 216mm; border: none;">
-          <div class="underLine" style="width: 216mm; border-bottom: 1px solid "></div>
-        </div>
-      </div>
-      <div class="whiteBox" style="width: 216.4mm; border: none;">
-        <div class="whiteBox" style="width: 27mm; border: none;">Clinical Diagnosis:</div>
-        <div class="whiteBox" style="width: 189mm; border: none;">
-          <div class="underLine" style="width: 189mm; border-bottom: 1px solid "></div>
-        </div>
-      </div>
-      <div class="whiteBox" style="width: 216.4mm; border: none;">
-        <div class="whiteBox" style="width: 216mm; border: none;">
-          <div class="underLine" style="width: 216mm; border-bottom: 1px solid"></div>
-        </div>
-      </div>
-      <div class="yellowBox" style="width: 216.4mm; border: none;">
-        <div class="whiteBox" style="width: 75mm; border: none;">Reason for Today's Visit: ICD-10 code(s) (REQUIRED)</div>
-        <div class="whiteBox" style="width: 141mm; border: none;">
-          <div class="underLine" style="width: 141mm; border-bottom: 1px solid"></div>
-        </div>
-      </div>
-      <div class="yellowBox" style="width: 216.4mm; border: none;">
-        <div class="whiteBox" style="width: 216mm; border: none;">
-          <div class="underLine" style="width: 216mm; border-bottom: 1px solid"></div>
-        </div>
-      </div>
-    </div>
+    Hello World
   </body>
 </html>
