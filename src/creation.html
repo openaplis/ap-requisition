@@ -2,38 +2,240 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Gyn Ctyo Req</title>
     <style>
     @media print {
       body {
-       font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-       font-size: 1em;
-       width: 8.5in;
-       height: 11in;
-       border: 1px solid black;
+        width: 8.5in;
+        height: 11in;
+        font-family: Calibri;
+        -webkit-print-color-adjust: exact;
+      }
+      .checkBox {
+        -webkit-print-color-adjust: exact;
       }
     }
     @media screen {
       body {
-        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-        font-size: 1em;
-        border: 1px solid black;
-        width: 50mm;
-        height: 200mm;
+        width: 8.5in;
+        height: 11in;
+        font-family: Calibri;
       }
     }
-    @page {
-      size: 8.5in 11in;
-      margin-top: 0.125in;
-      margin-left: 0.125in;
-      margin-right: 0.25in;
-      margin-bottom: 0.125in;
+    html,
+    body {
+      background-color: #fff;
+      margin: 0px;
     }
-
-
+    @page {
+      position: relative;
+      display: block;
+      background: #fff;
+      page-break-after: auto;
+      overflow: hidden;
+      size: 8.5in 11in;
+      padding-left: 1px;
+      margin-top: 4mm;
+      margin-left: 4mm;
+      margin-right: 4mm;
+      margin-bottom: 6mm;
+    }
+    .row {
+      height: 6mm;
+      width: 217mm;
+    }
+    .heading {
+      position: relative;
+      height: 6mm;
+      width: 217mm;
+      background: #a95346;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 0.1mm;
+      color: #a95346;
+      line-height: 1.5;
+      font-size: 4.5mm;
+    }
+    .whiteBox {
+      height: 6mm;
+      font-size: 3mm;
+      line-height: 2;
+      border-left: 1px solid #a95346;
+      border-bottom: 1px solid #a95346;
+      color: #a95346;
+      letter-spacing: 0.1mm;
+      float: left;
+      display: inline-block;
+      text-align: center;
+    }
+    .oncoBox {
+      height: 4mm;
+      font-size: 3mm;
+      line-height: 2;
+      border-left: 1px solid #a95346;
+      border-bottom: 1px solid #a95346;
+      color: #a95346;
+      letter-spacing: 0.1mm;
+      float: left;
+      display: inline-block;
+      text-align: center;
+    }
+    .brownBox {
+      height: 6mm;
+      font-size: 3mm;
+      line-height: 2;
+      border-left: 1px solid #a95346;
+      border-bottom: 1px solid #a95346;
+      color: #a95346;
+      letter-spacing: 0.1mm;
+      float: left;
+      display: inline-block;
+      text-align: center;
+      background-color: #f9edef;
+    }
+    .yellowBox {
+      height: 6mm;
+      font-size: 3mm;
+      line-height: 2;
+      border-left: 1px solid #a95346;
+      border-bottom: 1px solid #a95346;
+      color: #a95346;
+      letter-spacing: 0.1mm;
+      float: left;
+      display: inline-block;
+      text-align: center;
+      background-color: #fff19c;
+    }
+    .checkBox {
+      width: 2mm;
+      height: 2mm;
+      background-color: #fff;
+      position: relative;
+      display: inline-block;
+      border: 1px solid;
+    }
+    .underLine {
+      height: 4mm;
+      width: 68mm;
+      position: relative;
+      display: inline-block;
+      float: left;
+    }
+    .highlight {
+      background-color: #fff19c;
+    }
     </style>
   </head>
   <body>
-    Hello World
+    <div class="page">
+      <div class="whiteBox" style="width: 217.5mm; height: 34mm; border: 1px dotted;">
+        <div class="whiteBox" style="width: 46mm; height: 20mm; border: none;">
+          <img src="logo 45x18.jpg" alt="logo" style="width:45mm; height:18mm; padding-left: 1mm; padding-top: 1mm;">
+        </div>
+        <div class="whiteBox" style="width: 129mm; height: 3.33mm; border: none; text-align: center; font-size: 2.25mm; line-height: 1.5; padding-right: 3mm;">2900 12th Avenue North, Suite 295W</div>
+        <div class="whiteBox" style="width: 35mm; height: 3.33mm; border: none; text-align: left; font-size: 2.25mm; padding-left: 2.75mm; line-height: 1.5;">Michael S Brown, MD, FCAP</div>
+        <div class="whiteBox" style="width: 129mm; height: 3.33mm; border: none; text-align: center; font-size: 2.25mm; line-height: 1.5; padding-right: 3mm;">Billings, MT 59101</div>
+        <div class="whiteBox" style="width: 35mm; height: 3.33mm; border: none; text-align: left; font-size: 2.25mm; padding-left: 2.75mm; line-height: 1.5;">Pamela P. Clegg, MD, FCAP</div>
+        <div class="whiteBox" style="width: 129mm; height: 3.33mm; border: none; text-align: center; font-size: 2.25mm; line-height: 1.5; padding-right: 3mm;">Phone: (406) 238-6360 · (888) 400-6640</div>
+        <div class="whiteBox" style="width: 35mm; height: 3.33mm; border: none; text-align: left; font-size: 2.25mm; padding-left: 2.75mm; line-height: 1.5;">Angela F. Durden, MD, FCAP</div>
+        <div class="whiteBox" style="width: 129mm; height: 3.33mm; border: none; text-align: center; font-size: 2.25mm; line-height: 1.5; padding-right: 3mm;">Fax: (406) 238-6361</div>
+        <div class="whiteBox" style="width: 35mm; height: 3.33mm; border: none; text-align: left; font-size: 2.25mm; padding-left: 2.75mm; line-height: 1.5;">Kerrie R Emerick, MD, FCAP</div>
+        <div class="whiteBox" style="width: 129mm; height: 3.33mm; border: none; text-align: center; font-size: 2.25mm; padding-right: 3mm;"></div>
+        <div class="whiteBox" style="width: 35mm; height: 3.33mm; border: none; text-align: left; font-size: 2.25mm; padding-left: 2.75mm; line-height: 1.5;">Christopher J. Nero, MD, FCAP</div>
+        <div class="whiteBox" style="width: 129mm; height: 3.33mm; border: none; text-align: center; font-size: 2.25mm; line-height: 1.5; padding-right: 3mm;">(307) 578-1850</div>
+        <div class="whiteBox" style="width: 35mm; height: 3.33mm; border: none; text-align: left; font-size: 2.25mm; padding-left: 2.75mm; line-height: 1.5;">Duane A. Schultz, MD, FCAP</div>
+        <div class="whiteBox" style="width: 215mm; height: 3mm; border: none; text-align: center; font-size: 2.25mm; line-height: 1.5; padding-left: 2mm;">707 Sheridan Avenue</div>
+        <div class="whiteBox" style="width: 215mm; height: 5mm; border: none; text-align: center; font-size: 2.25mm; line-height: 1.5; padding-left: 2mm;">Cody, WY 82414</div>
+        <div class="whiteBox" style="width: 217mm; height: 5mm; border: none; text-align: center; line-height: 1; font-size: 4.5mm; font-weight: bold;">Gyn Cytology/Pathology Testing</div>
+      </div>
+
+
+
+
+
+      <div class="whiteBox" style="width: 217.5mm; height: 45mm; border: none;">
+        <div class="whiteBox" style="width: 107mm; height: 45mm; border: none;">
+          <div class="heading" style="width: 107mm; color: white;">PATIENT INFORMATION</div>
+          <div class="whiteBox" style="width: 48mm; height: 7mm;">
+            <div class="whiteBox" style="width: 48mm; height: 3.5mm; border: none; line-height: 1; text-align: left;">PATIENT LAST NAME:</div>
+          </div>
+          <div class="whiteBox" style="width: 45mm; height: 7mm;;">
+            <div class="whiteBox" style="width: 45mm; height: 3.5mm; border: none; line-height: 1; text-align: left;">FIRST NAME:</div>
+          </div>
+          <div class="whiteBox" style="width: 13mm; height: 7mm;">
+            <div class="whiteBox" style="width: 12mm; height: 3.5mm; border: none; line-height: 1; text-align: left;">MI:</div>
+          </div>
+          <div class="whiteBox" style="width: 48mm; height: 7mm;">
+            <div class="whiteBox" style="width: 48mm; height: 3.5mm; border: none; line-height: 1; text-align: left;">PATIENT DATE OF BIRTH:</div>
+          </div>
+          <div class="whiteBox" style="width: 35mm; height: 7mm;">
+            <div class="whiteBox" style="width: 35mm; height: 3.5mm; border: none; line-height: 1; text-align: left;">AGE:</div>
+          </div>
+          <div class="whiteBox" style="width: 23mm; height: 7mm;">
+            <div class="whiteBox" style="width: 22mm; height: 3.5mm; border: none; line-height: 1; text-align: left;">GENDER:</div>
+          </div>
+          <div class="heading" style="width: 107mm; height: 2mm; float: left;"></div>
+          <div class="yellowBox" style="width: 107mm; height: 7.25mm;">
+            <div class="whiteBox" style="width: 106mm; height: 3.5mm; border: none; line-height: 1; text-align: left;">PROVIDER SIGNATURE:</div>
+          </div>
+          <div class="yellowBox" style="width: 107mm; height: 7.5mm;">
+            <div class="whiteBox" style="width: 106mm; height: 3.5mm; border: none; line-height: 1; text-align: left;">COLLECTION DATE/TIME:</div>
+          </div>
+          <div class="yellowBox" style="width: 107mm; height: 7.5mm;">
+            <div class="whiteBox" style="width: 106mm; height: 3.5mm; border: none; line-height: 1; text-align: left;">ADDITIONAL COPY OF RESULT TO:</div>
+          </div>
+        </div>
+        <div class="whiteBox" style="width: 109.75mm; height: 45mm; border: 1px solid; text-align: left;">
+          <div class="whiteBox" style="border: none; padding-left: 2mm;">REQUESTED BY:</div>
+        </div>
+      </div>
+
+
+      <div class="whiteBox" style="width: 217.5mm; height: 18mm; border: 1px dotted;">
+        <div class="heading" style="width: 217mm; color: white;">BILLING INFORMATION</div>
+        <div class="whiteBox" style="width: 217mm; border: none;">
+
+          <div class="whiteBox" style="width: 5mm; border: none;">
+            <div class="checkBox"></div>
+          </div>
+          <div class="whiteBox" style="border: none; padding-right: 1.5mm;">Insurance: Hospital</div>
+          <div class="whiteBox" style="width: 5mm; border: none;">
+            <div class="checkBox"></div>
+          </div>
+          <div class="whiteBox" style="border: none; padding-right: 1.5mm;">IP</div>
+          <div class="whiteBox" style="width: 5mm; border: none;">
+            <div class="checkBox"></div>
+          </div>
+          <div class="whiteBox" style="border: none; padding-right: 1.5mm;">OP</div>
+          <div class="whiteBox" style="width: 5mm; border: none;">
+            <div class="checkBox"></div>
+          </div>
+          <div class="whiteBox" style="border: none; padding-right: 1.5mm;">Private Practice</div>
+          <div class="whiteBox" style="width: 5mm; border: none;">
+            <div class="checkBox"></div>
+          </div>
+          <div class="whiteBox" style="border: none; padding-right: 1.5mm;">Hospital Owned Practice</div>
+          <div class="whiteBox" style="width: 5mm; border: none;">
+            <div class="checkBox"></div>
+          </div>
+          <div class="whiteBox" style="border: none; padding-right: 1.5mm;">Insurance</div>
+          <div class="whiteBox" style="width: 5mm; border: none;">
+            <div class="checkBox"></div>
+          </div>
+          <div class="whiteBox" style="border: none; padding-right: 1.5mm;">Medicare (attached ABN)</div>
+          <div class="whiteBox" style="width: 5mm; border: none;">
+            <div class="checkBox"></div>
+          </div>
+          <div class="whiteBox" style="border: none; padding-right: 1.5mm;">Medicaid</div>
+          <div class="whiteBox" style="width: 5mm; border: none;">
+            <div class="checkBox"></div>
+          </div>
+          <div class="whiteBox" style="border: none; padding-right: 1.5mm;">Uninsured</div>
+        </div>
+        <div class="whiteBox" style="width: 217mm; border: none;"><span class="highlight" style="text-decoration: highlight;">SEPARATE SHEET SHOWING PATIENT DEMOGRAPHIC INFORMATION MUST BE ATTACHED</span></div>
+      </div>
+
+
+    </div>
   </body>
 </html>
