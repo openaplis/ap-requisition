@@ -13,7 +13,7 @@ module.exports = class GynCytologyReq {
 
     Handlebars.registerPartial('layouts/base', Handlebars.templates['layouts/base'])
     Handlebars.registerPartial('gyn-cytology-req/patient-info', Handlebars.templates['gyn-cytology-req/patient-info'])
-    Handlebars.registerPartial('gyn-cytology-req/billing-info', Handlebars.templates['gyn-cytology-req/billing-info'])
+    Handlebars.registerPartial('partials/billing-info', Handlebars.templates['partials/billing-info'])
     Handlebars.registerPartial('gyn-cytology-req/header', Handlebars.templates['gyn-cytology-req/header'])
     Handlebars.registerPartial('gyn-cytology-req/specimen-info', Handlebars.templates['gyn-cytology-req/specimen-info'])
   }
