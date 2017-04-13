@@ -11,7 +11,7 @@ module.exports = class SurgicalReq {
     Handlebars.registerPartial('style', Handlebars.templates['style'])
 
     Handlebars.registerPartial('layouts/base', Handlebars.templates['layouts/base'])
-    Handlebars.registerPartial('partials/patient-info', Handlebars.templates['partials/patient-info'])
+    Handlebars.registerPartial('surgical/patient-info', Handlebars.templates['surgical/patient-info'])
     Handlebars.registerPartial('partials/billing-info', Handlebars.templates['partials/billing-info'])
     Handlebars.registerPartial('surgical/surgical-header', Handlebars.templates['surgical/surgical-header'])
     Handlebars.registerPartial('surgical/clinical-data', Handlebars.templates['surgical/clinical-data'])

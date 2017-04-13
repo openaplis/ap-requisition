@@ -11,11 +11,11 @@ module.exports = class SurgicalReq {
     Handlebars.registerPartial('style', Handlebars.templates['style'])
 
     Handlebars.registerPartial('layouts/base', Handlebars.templates['layouts/base'])
-    Handlebars.registerPartial('oncology/onco-header', Handlebars.templates['oncology/onco-header'])
-    Handlebars.registerPartial('oncology/onco-clientandpatient-info', Handlebars.templates['oncology/onco-clientandpatient-info'])
+    Handlebars.registerPartial('oncology/header', Handlebars.templates['oncology/header'])
+    Handlebars.registerPartial('oncology/clientandpatient-info', Handlebars.templates['oncology/clientandpatient-info'])
     Handlebars.registerPartial('oncology/consult', Handlebars.templates['oncology/consult'])
-    Handlebars.registerPartial('oncology/hematology-test-menu', Handlebars.templates['oncology/hematology-test-menu'])
-    Handlebars.registerPartial('oncology/solid-tumor-test-menu', Handlebars.templates['oncology/solid-tumor-test-menu'])
+    Handlebars.registerPartial('oncology/hematology-menu', Handlebars.templates['oncology/hematology-menu'])
+    Handlebars.registerPartial('oncology/solid-tumor-menu', Handlebars.templates['oncology/solid-tumor-menu'])
   }
 
   build(cb) {
