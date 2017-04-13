@@ -1,26 +1,45 @@
 red = #a95346
 orange = #f9edef
-yellow = #fff19c
+yellow = #ffffb6
 
-rowHeight = 5mm
+fontA = font-size
+font-size = 3mm
+
+rowHeight = 6mm
 pageWidth = 217mm
 pageHeight = 278mm
 
 @media print
   body
+    width 8.5in
+    height 11in
+    font-family Calibri
     -webkit-print-color-adjust exact
   .checkBox
     -webkit-print-color-adjust exact
 
-.page
+@media screen
+  body
+    width 8.5in
+    height 11in
+    font-family Calibri
+
+html, body
+  background-color: white
+  margin: 0px
+
+@page
   position relative
-  height pageHeight
-  width pageWidth
-  font-family 'Arial'
   display block
   background white
   page-break-after auto
   overflow hidden
+  size 8.5in 11in
+  padding-left 1px
+  margin-top 4mm
+  margin-left 4mm
+  margin-right 4mm
+  margin-bottom 6mm
 
 .row
   height rowHeight
@@ -35,10 +54,24 @@ pageHeight = 278mm
   text-align center
   letter-spacing .1mm
   color red
+  line-height: 1.5;
+  font-size 4.5mm;
 
 .whiteBox
   height rowHeight
-  font-size 3mm
+  font-size fontA
+  line-height 2
+  border-left 1px solid red
+  border-bottom 1px solid red
+  color red
+  letter-spacing .1mm
+  float left
+  display inline-block
+  text-align center
+
+.oncoBox
+  height 4mm
+  font-size fontA
   line-height 2
   border-left 1px solid red
   border-bottom 1px solid red
@@ -50,7 +83,7 @@ pageHeight = 278mm
 
 .brownBox
   height rowHeight
-  font-size 3mm
+  font-size fontA
   line-height 2
   border-left 1px solid red
   border-bottom 1px solid red
@@ -63,7 +96,7 @@ pageHeight = 278mm
 
 .yellowBox
   height rowHeight
-  font-size 3mm
+  font-size fontA
   line-height 2
   border-left 1px solid red
   border-bottom 1px solid red
@@ -80,6 +113,7 @@ pageHeight = 278mm
   background-color white
   position relative
   display inline-block
+  border 1px solid
 
 .underLine
   height 4mm

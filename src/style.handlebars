@@ -1,37 +1,69 @@
 @media print {
   body {
+    width: 8.5in;
+    height: 11in;
+    font-family: Calibri;
     -webkit-print-color-adjust: exact;
   }
   .checkBox {
     -webkit-print-color-adjust: exact;
   }
 }
-.page {
+@media screen {
+  body {
+    width: 8.5in;
+    height: 11in;
+    font-family: Calibri;
+  }
+}
+html,
+body {
+  background-color: #fff;
+  margin: 0px;
+}
+@page {
   position: relative;
-  height: 278mm;
-  width: 217mm;
-  font-family: 'Arial';
   display: block;
   background: #fff;
   page-break-after: auto;
   overflow: hidden;
+  size: 8.5in 11in;
+  padding-left: 1px;
+  margin-top: 4mm;
+  margin-left: 4mm;
+  margin-right: 4mm;
+  margin-bottom: 6mm;
 }
 .row {
-  height: 5mm;
+  height: 6mm;
   width: 217mm;
 }
 .heading {
   position: relative;
-  height: 5mm;
+  height: 6mm;
   width: 217mm;
   background: #a95346;
   font-weight: bold;
   text-align: center;
   letter-spacing: 0.1mm;
   color: #a95346;
+  line-height: 1.5;
+  font-size: 4.5mm;
 }
 .whiteBox {
-  height: 5mm;
+  height: 6mm;
+  font-size: 3mm;
+  line-height: 2;
+  border-left: 1px solid #a95346;
+  border-bottom: 1px solid #a95346;
+  color: #a95346;
+  letter-spacing: 0.1mm;
+  float: left;
+  display: inline-block;
+  text-align: center;
+}
+.oncoBox {
+  height: 4mm;
   font-size: 3mm;
   line-height: 2;
   border-left: 1px solid #a95346;
@@ -43,7 +75,7 @@
   text-align: center;
 }
 .brownBox {
-  height: 5mm;
+  height: 6mm;
   font-size: 3mm;
   line-height: 2;
   border-left: 1px solid #a95346;
@@ -56,7 +88,7 @@
   background-color: #f9edef;
 }
 .yellowBox {
-  height: 5mm;
+  height: 6mm;
   font-size: 3mm;
   line-height: 2;
   border-left: 1px solid #a95346;
@@ -66,7 +98,7 @@
   float: left;
   display: inline-block;
   text-align: center;
-  background-color: #fff19c;
+  background-color: #ffffb6;
 }
 .checkBox {
   width: 2mm;
@@ -74,6 +106,7 @@
   background-color: #fff;
   position: relative;
   display: inline-block;
+  border: 1px solid;
 }
 .underLine {
   height: 4mm;
@@ -83,5 +116,5 @@
   float: left;
 }
 .highlight {
-  background-color: #fff19c;
+  background-color: #ffffb6;
 }
