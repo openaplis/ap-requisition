@@ -12,10 +12,10 @@ module.exports = class GynCytologyReq {
     Handlebars.registerPartial('gyn-cytology-req/page', Handlebars.templates['gyn-cytology-req/page'])
 
     Handlebars.registerPartial('layouts/base', Handlebars.templates['layouts/base'])
-    Handlebars.registerPartial('new-gyn-req/gyn-patient-info', Handlebars.templates['partials/patient-info'])
-    Handlebars.registerPartial('new-gyn-req/gyn-billing-info', Handlebars.templates['partials/billing-info'])
-    Handlebars.registerPartial('new-gyn-req/gyn-heading', Handlebars.templates['womens-health-req/requisition-header'])
-    Handlebars.registerPartial('new-gyn-req/specimen-info', Handlebars.templates['womens-health-req/tissue-biopsy'])
+    Handlebars.registerPartial('gyn-cytology-req/patient-info', Handlebars.templates['gyn-cytology-req/patient-info'])
+    Handlebars.registerPartial('gyn-cytology-req/billing-info', Handlebars.templates['gyn-cytology-req/billing-info'])
+    Handlebars.registerPartial('gyn-cytology-req/header', Handlebars.templates['gyn-cytology-req/header'])
+    Handlebars.registerPartial('gyn-cytology-req/specimen-info', Handlebars.templates['gyn-cytology-req/specimen-info'])
   }
 
   build(cb) {
@@ -23,7 +23,7 @@ module.exports = class GynCytologyReq {
       title: 'hello world'
     }
 
-    var template = Handlebars.templates['new-gyn-req/page']
+    var template = Handlebars.templates['gyn-cytology-req/page']
     var result = template(d)
     cb(result)
   }

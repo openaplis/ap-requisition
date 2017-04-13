@@ -3,7 +3,7 @@ orange = #f9edef
 yellow = #ffffb6
 
 fontA = font-size
-font-size = 3mm
+font-size = 8pt
 
 rowHeight = 6mm
 pageWidth = 217mm
@@ -28,16 +28,17 @@ html, body
   background-color: white
   margin: 0px
 
+
 @page
   position relative
   display block
-  background white
+  background #fff
   page-break-after auto
   overflow hidden
   size 8.5in 11in
   padding-left 1px
   margin-top 4mm
-  margin-left 4mm
+  margin-left 6mm
   margin-right 4mm
   margin-bottom 6mm
 
@@ -54,8 +55,20 @@ html, body
   text-align center
   letter-spacing .1mm
   color red
-  line-height: 1.5;
-  font-size 4.5mm;
+  line-height: 1.5
+  font-size 4.5mm
+
+.gynHeading
+  position relative
+  height 4mm
+  width 217mm
+  background #a95346
+  font-weight bold
+  text-align center
+  letter-spacing .25px
+  color #a95346
+  line-height 1
+  font-size 11pt
 
 .whiteBox
   height rowHeight
@@ -106,6 +119,16 @@ html, body
   display inline-block
   text-align center
   background-color yellow
+
+.gynBox
+  height 3mm
+  font-size 6pt
+  line-height 1.5
+  color #a95346
+  letter-spacing .125px
+  float left
+  display inline-block
+  text-align left
 
 .checkBox
   width 2mm
