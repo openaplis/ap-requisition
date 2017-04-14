@@ -12,7 +12,7 @@ describe('gynCytologyReq', function() {
   it('testing gynCytologyReq', function(done) {
     requisitions.gynCytologyReq.build(data, function (err, result) {
       assert.notEqual(result, null)
-      const requisitionPath = './requisitions/gynCytologyReq.html'
+      var requisitionPath = './requisitions/gynCytologyReq.html'
       fs.writeFile(requisitionPath, result, function (err) {
         if(err) console.log(err)
       })
@@ -25,7 +25,7 @@ describe('surgicalReq', function() {
   it('testing surgicalReq', function(done) {
     requisitions.surgicalReq.build(data, function (err, result) {
       assert.notEqual(result, null)
-      const requisitionPath = './requisitions/surgicalReq.html'
+      var requisitionPath = './requisitions/surgicalReq.html'
       fs.writeFile(requisitionPath, result, function (err) {
         if(err) console.log(err)
       })
@@ -38,7 +38,7 @@ describe('oncologyReq', function() {
   it('testing oncologyReq', function(done) {
     requisitions.oncologyReq.build(data, function (err, result) {
       assert.notEqual(result, null)
-      const requisitionPath = './requisitions/oncologyReq.html'
+      var requisitionPath = './requisitions/oncologyReq.html'
       fs.writeFile(requisitionPath, result, function (err) {
         if(err) console.log(err)
       })
