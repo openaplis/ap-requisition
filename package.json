@@ -1,8 +1,8 @@
 {
   "name": "ap-requisition",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "Anatomic Pathology Requisition",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "build-style": "node build-style.js",
     "build-views": "handlebars ./src -f ./src/views.js -c handlebars/runtime"
@@ -23,8 +23,10 @@
   },
   "homepage": "https://github.com/mjschuetze/ap-requisition#readme",
   "dependencies": {
+    "chai": "^3.5.0",
     "fs-readdir-recursive": "^1.0.0",
     "handlebars": "^4.0.6",
+    "mocha": "^3.2.0",
     "stylus": "^0.54.5"
   }
 }

@@ -1,7 +1,8 @@
 'use strict'
 
-const gynCytologyReq = require('./core/gynCytologyReq.js')
+const path = require('path')
+const gynCytologyReq = require('./core/gyn-cytology-req.js')
 
 exports = module.exports = {
-    gynCytologyReq = gynCytologyReq
+    gynCytologyReq: gynCytologyReq
 }
