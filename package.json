@@ -9,24 +9,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mjschuetze/ap-requisition.git"
+    "url": "git+https://github.com/openaplis/ap-requisition.git"
   },
   "keywords": [
     "requisition",
     "Anatomic Pathology",
     "LIS"
   ],
-  "author": "Sid Harder",
+  "author": "Mark Schuetze",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mjschuetze/ap-requisition/issues"
+    "url": "https://github.com/openaplis/ap-requisition/issues"
   },
-  "homepage": "https://github.com/mjschuetze/ap-requisition#readme",
+  "homepage": "https://github.com/openaplis/ap-requisition#readme",
   "dependencies": {
     "chai": "^3.5.0",
     "fs-readdir-recursive": "^1.0.0",
     "handlebars": "^4.0.6",
     "mocha": "^3.2.0",
     "stylus": "^0.54.5"
-  }
+  },
+  "contributors": [
+    "Mark Schuetze <markjschuetze@gmail.com>",
+    "Sid Harder <sideharder@gmail.com>",
+  ]
 }
