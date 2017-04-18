@@ -5,7 +5,20 @@ const fs = require('fs')
 const requisitions  = require('../src/index.js')
 
 var data = {
-  title: 'This is a test of the emergency broadcast system.'
+  title: 'This is a test of the emergency broadcast system.',
+  address1line1: '150 Walt Disney lane',
+  address1line2: 'MiddleOfNowhere, MT 55555',
+  phone1: 'Phone: (202) 505-5555',
+  fax: 'Fax: (202) 505-5556',
+  phone2: 'Phone: (303) 606-6665',
+  address2line1: '42 MGM circle',
+  address2line2: 'Fairytale, NY 52525',
+  pathologistA: 'Donald Duck',
+  pathologistB: 'Mickey Mouse',
+  pathologistE: 'Goofey Gooferson',
+  pathologistC: 'Bugs Bunny',
+  pathologistD: 'Daffy Duck Sr',
+  pathologistF: 'Porky Pig'
 }
 
 describe('gynCytologyReq', function() {
