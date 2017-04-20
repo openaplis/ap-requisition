@@ -12,12 +12,9 @@
     <div class="headerBox" style="width: 46mm; height: 5mm; border: none; text-align: center;">{{address2line2}}</div>
   </div>
   <div class="whiteBox" style="width: 43mm; height: 40mm; border: none; text-align: left;">
-    <div class="headerBox" style="width: 144mm; height: 3mm; border: none; text-align: left; padding-left: 4mm;">{{pathologistA}}</div>
-    <div class="headerBox" style="width: 144mm; height: 3mm; border: none; text-align: left; padding-left: 4mm;">{{pathologistB}}</div>
-    <div class="headerBox" style="width: 144mm; height: 3mm; border: none; text-align: left; padding-left: 4mm;">{{pathologistC}}</div>
-    <div class="headerBox" style="width: 144mm; height: 3mm; border: none; text-align: left; padding-left: 4mm;">{{pathologistD}}</div>
-    <div class="headerBox" style="width: 144mm; height: 3mm; border: none; text-align: left; padding-left: 4mm;">{{pathologistE}}</div>
-    <div class="headerBox" style="width: 40mm; height: 3mm; border: none; text-align: left; padding-left: 4mm;">{{pathologistF}}</div>
+    {{#each pathologist}}
+    <div class="headerBox" style="width: 41mm; height: 3mm; border: none; text-align: left;">{{this}}</div>
+    {{/each}}
   </div>
   <div class="whiteBox" style="width: 129.25mm; height: 40mm; border: none; text-align: left;">
     <div class="whiteBox" style="width: 129mm; height: 14mm; border: none;"></div>

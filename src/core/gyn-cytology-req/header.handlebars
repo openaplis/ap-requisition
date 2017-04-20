@@ -15,12 +15,9 @@
   </div>
   <div class="whiteBox" style="width: 35mm; height: 29mm; border: none;">
     <div class="whiteBox" style="width: 35mm; height: 1.5mm; border: none; line-height: 1.5;"></div>
-    <div class="headerBox" style="width: 35mm; height: 3mm; line-height: 1.5; text-align: left;">{{pathologistA}}</div>
-    <div class="headerBox" style="width: 35mm; height: 3mm; line-height: 1.5; text-align: left;">{{pathologistB}}</div>
-    <div class="headerBox" style="width: 35mm; height: 3mm; line-height: 1.5; text-align: left;">{{pathologistC}}</div>
-    <div class="headerBox" style="width: 35mm; height: 3mm; line-height: 1.5; text-align: left;">{{pathologistD}}</div>
-    <div class="headerBox" style="width: 35mm; height: 3mm; line-height: 1.5; text-align: left;">{{pathologistE}}</div>
-    <div class="headerBox" style="width: 35mm; height: 3mm; line-height: 1.5; text-align: left;">{{pathologistF}}</div>
+    {{#each pathologist}}
+    <div class="headerBox" style="width: 41mm; height: 3mm; border: none; text-align: left;">{{this}}</div>
+    {{/each}}
   </div>
     <div class="whiteBox" style="width: 217mm; border: none; text-align: center; line-height: 1; font-size: 4.5mm; font-weight: bold;">Gyn Cytology/Pathology Testing</div>
 </div>

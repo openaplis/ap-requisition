@@ -13,13 +13,16 @@ var data = {
   phone2: 'Phone: (303) 606-6665',
   address2line1: '42 MGM circle',
   address2line2: 'Fairytale, NY 52525',
-  pathologistA: 'Donald Duck',
-  pathologistB: 'Mickey Mouse',
-  pathologistE: 'Goofey Gooferson',
-  pathologistC: 'Bugs Bunny',
-  pathologistD: 'Daffy Duck Sr',
-  pathologistF: 'Porky Pig'
+  pathologist: [
+    "Michael S. Brown, MD, FCAP",
+    "Pamela P. Clegg, MD, FCAP",
+    "Angela F. Durden, MD, FCAP",
+    "Kerrie R. Emerick, MD, FCAP",
+    "Christopher J. Nero, MD, FCAP",
+    "Duane A. Schultz, MD, FCAP"
+  ]
 }
+
 
 describe('gynCytologyReq', function() {
   it('testing gynCytologyReq', function(done) {
