@@ -1,24 +1,27 @@
-<div class="whiteBox" style="width: 216mm; height: 31mm; border: none; border-left: 2px solid; border-right: 2px solid; border-top: 2px solid;">
+<div class="whiteBox" style="width: 216mm; height: 31.5mm; border: none; border-left: 2px solid; border-right: 2px solid; border-top: 2px solid;">
   <div class="whiteBox" style="width: 46mm; height: 23mm; border: none;">
     <img src="images/ypiiLogo.jpg" alt="logo" style="width:45mm; height:18mm; padding-left: 1mm; padding-top: 1mm;">
   </div>
   <div class="whiteBox" style="width: 122mm; height: 23mm; border: none;">
     <div class="whiteBox" style="width: 120mm; height: 5mm; border: none; font-size: 6mm; font-weight: bold; coor: black; line-height: 1.5;">Test Requisition</div>
-    <div class="whiteBox" style="width: 120mm; height: 5mm; border: none; font-size: 5mm; color: black;">Oncology Testing</div>
-    <div class="whiteBox" style="width: 120mm; height: 5mm; border: none; font-size: 5mm; color: black;">Toll Free: (888) 400-6640, Phone: (406) 238-6360</div>
-    <div class="whiteBox" style="width: 120mm; height: 5mm; border: none; font-size: 5mm; color: black;">Fax: (406) 238-6361</div>
+    <div class="headerBox" style="width: 120mm; height: 5mm; border: none; font-size: 5mm; color: black;">Oncology Testing</div>
+    <div class="headerBox" style="width: 120mm; height: 5mm; border: none; font-size: 5mm; color: black;">{{phone1}}</div>
+    <div class="headerBox" style="width: 120mm; height: 5mm; border: none; font-size: 5mm; color: black;">{{fax}}</div>
   </div>
   <div class="whiteBox" style="width: 46mm; height: 23mm; border: none;">
     <img src="images/neoSmall.jpg" alt="neo" style="width:24.98mm; height:11.35mm; padding-left: 1mm; padding-top: 1mm;">
   </div>
-  <div class="whiteBox" style="width: 46mm; height: 3.5mm; border: none; font-size: 2.25mm; color: black; text-align: left; padding-left: 1mm;">2900 12th Avenue North, Suite 295W</div>
-  <div class="whiteBox" style="width: 40mm; height: 3.5mm; border: none; font-size: 2.25mm; color: black;">Michael S. Brown, MD, FCAP</div>
-  <div class="whiteBox" style="width: 40mm; height: 3.5mm; border: none; font-size: 2.25mm; color: black;">Angela F. Durden, MD, FCAP</div>
-  <div class="whiteBox" style="width: 40mm; height: 3.5mm; border: none; font-size: 2.25mm; color: black;">Christopher J. Nero, MD, FCAP</div>
-  <div class="whiteBox" style="width: 47mm; height: 3.5mm; border: none; font-size: 2.25mm; color: black; text-align: right;">707 Sheridan Avenue Cody, WY 82414</div>
-  <div class="whiteBox" style="width: 46mm; height: 3.5mm; border: none; font-size: 2.25mm; color: black; text-align: left; padding-left: 1mm;">Billing, MT 59101</div>
-  <div class="whiteBox" style="width: 40mm; height: 3.5mm; border: none; font-size: 2.25mm; color: black;">Pamela P. Clegg, MD, FCAP</div>
-  <div class="whiteBox" style="width: 40mm; height: 3.5mm; border: none; font-size: 2.25mm; color: black;">Kerrie R. Emerick, MD, FCAP</div>
-  <div class="whiteBox" style="width: 40mm; height: 3.5mm; border: none; font-size: 2.25mm; color: black;">Duane A. Schultz, MD, FCAP</div>
-  <div class="whiteBox" style="width: 47mm; height: 3.5mm; border: none; font-size: 2.25mm; color: black; text-align: right;">(307) 578-1850</div>
+  <div class="whiteBox" style="width: 46mm; height: 7mm; border: none;">
+    <div class="headerBox" style="width: 46mm; height: 3.5mm; color: black; text-align: left; padding-left: 1mm;">{{address1line1}}</div>
+    <div class="headerBox" style="width: 46mm; height: 3.5mm; color: black; text-align: left; padding-left: 1mm;">{{address1line2}}</div>
+  </div>
+  <div class="whiteBox" style="width: 120mm; height: 7mm; border: none;">
+    {{#each pathologist}}
+    <div class="headerBox" style="width: 40mm; height: 3mm; border: none; color: black; text-align: left;">{{this}}</div>
+    {{/each}}
+  </div>
+  <div class="whiteBox" style="width: 46mm; height: 7mm; border: none;">
+    <div class="headerBox" style="width: 46mm; height: 3.5mm; color: black; text-align: right;">{{address2line1}}</div>
+    <div class="headerBox" style="width: 46mm; height: 3.5mm; color: black; text-align: right;">{{address2line2}}</div>
+  </div>
 </div>
