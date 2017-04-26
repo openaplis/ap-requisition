@@ -32,37 +32,23 @@ describe('gynCytologyReq', function() {
       ]
     }
 
-    var images = []
+    var images64 = []
 
-    async.waterfall([
-
-      function (callback) {
-        async.eachSeries(
-          ['./images/ypii-logo.jpg', './images/neo-small.jpg'],
-
-          function (fileName, cb) {
-            fs.readFile(fileName, function (err, content) {
-              if(err) return console.log(err)
-              images.push(content.toString('base64'))
-              cb(null)
-            })
-          }
-
-        ), function (err) {
-          callback(null, 'all done.')
-        }
+    async.eachSeries(
+      ['./images/ypii-logo.jpg', './images/neo-small.jpg'],
+      function (fileName, cb) {
+        fs.readFile(fileName, function (err, content) {
+          if(err) return console.log(err)
+          images.push(content.toString('base64'))
+          cb(null)
+        })
       },
-
       function (err) {
-        console.log('asdf')
-        inputData.logoImage = images[0]
-        inputData.neoImage = images[1]
+        inputData.logoImage = images64[0]
+        inputData.neoImage = images64[1]
         done()
       }
-
-    ]), function (err) {
-      console.log('waterfall is done.')
-    }
+    )
   })
 
   describe('gynCytologyReq', function() {
