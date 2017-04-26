@@ -4,7 +4,7 @@ var fs = require('fs')
 var Handlebars = require('handlebars/runtime');
 var templates = require(__dirname + '/views.js');
 
-module.exports.build = (data, callback) => {
+module.exports.build = (data, callback) => {    
     Handlebars.registerPartial('surgical/page', Handlebars.templates['surgical/page'])
     Handlebars.registerPartial('style', Handlebars.templates['style'])
 
