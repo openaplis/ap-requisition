@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/openaplis/ap-requisition#readme",
   "dependencies": {
+    "async": "^2.3.0",
     "chai": "^3.5.0",
     "fs-readdir-recursive": "^1.0.0",
     "handlebars": "^4.0.6",
