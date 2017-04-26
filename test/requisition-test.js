@@ -41,23 +41,28 @@ describe('gynCytologyReq', function() {
           ['./images/ypii-logo.jpg', './images/neo-small.jpg'],
 
           function (fileName, cb) {
-            console.log(fileName)
             fs.readFile(fileName, function (err, content) {
               if(err) return console.log(err)
               images.push(content.toString('base64'))
-              callback(null)
+              cb(null)
             })
           }
-        )
+
+        ), function (err) {
+          callback(null, 'all done.')
+        }
       },
 
       function (err) {
+        console.log('asdf')
         inputData.logoImage = images[0]
         inputData.neoImage = images[1]
         done()
       }
 
-    ])
+    ]), function (err) {
+      console.log('waterfall is done.')
+    }
   })
 
   describe('gynCytologyReq', function() {
