@@ -35,11 +35,11 @@ describe('gynCytologyReq', function() {
     var images64 = []
 
     async.eachSeries(
-      ['./images/ypii-logo.jpg', './images/neo-small.jpg'],
+      ['./images/imagea.jpg', './images/imageb.jpg'],
       function (fileName, cb) {
         fs.readFile(fileName, function (err, content) {
           if(err) return console.log(err)
-          images.push(content.toString('base64'))
+          images64.push(content.toString('base64'))
           cb(null)
         })
       },

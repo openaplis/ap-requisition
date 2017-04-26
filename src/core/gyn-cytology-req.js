@@ -3,8 +3,13 @@
 var fs = require('fs')
 var Handlebars = require('handlebars/runtime');
 var templates = require(__dirname + '/views.js');
+var cervixDiagramPath = './src/core/images/cervix-diagram.jpg'
 
 module.exports.build = (data, callback) => {
+
+  fs.readFile(cervixDiagramPath, function (err, content) {
+    if(err) return console.log(err)
+    data.cervixDiagramImage = content.toString('base64')
     Handlebars.registerPartial('style', Handlebars.templates['style'])
     Handlebars.registerPartial('gyn-cytology-req/page', Handlebars.templates['gyn-cytology-req/page'])
 
@@ -17,4 +22,5 @@ module.exports.build = (data, callback) => {
     var template = Handlebars.templates['gyn-cytology-req/page']
     var result = template(data)
     callback(null, result)
+  })
 }
