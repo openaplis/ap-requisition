@@ -23,12 +23,12 @@ describe('gynCytologyReq', function() {
       address2line1: '42 MGM circle',
       address2line2: 'Fairytale, NY 52525',
       pathologist: [
-        "Michael S. Brown, MD, FCAP",
-        "Pamela P. Clegg, MD, FCAP",
-        "Angela F. Durden, MD, FCAP",
-        "Kerrie R. Emerick, MD, FCAP",
-        "Christopher J. Nero, MD, FCAP",
-        "Duane A. Schultz, MD, FCAP"
+        "Mickey M. Mouse, MD, FCAP",
+        "Donald A. Duck, MD, FCAP",
+        "Minnie C. Mouse, MD, FCAP",
+        "Goofy G. Goof, MD, FCAP",
+        "Proky P. Pig, MD, FCAP",
+        "Walt G. Disney, MD, FCAP"
       ]
     }
 
