@@ -2,13 +2,14 @@
 
 var fs = require('fs')
 var Handlebars = require('handlebars/runtime');
-var templates = require(__dirname + '/views.js');
-var cervixDiagramPath = './src/core/images/cervix-diagram.jpg'
+var path = require('path')
 
-module.exports.build = (data, callback) => {
+var templates = require(path.join(__dirname, '/views.js'))
+var cervixDiagramPath = (path.join(__dirname, '/images/cervix-diagram.jpg'))
 
+module.exports.build = (data, callback) => {  
   fs.readFile(cervixDiagramPath, function (err, content) {
-    if(err) return console.log(err)
+    if(err) return callback(err)
     data.cervixDiagramImage = content.toString('base64')
     Handlebars.registerPartial('style', Handlebars.templates['style'])
     Handlebars.registerPartial('gyn-cytology-req/page', Handlebars.templates['gyn-cytology-req/page'])
