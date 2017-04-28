@@ -1,13 +1,14 @@
 'use strict'
 
 var fs = require('fs')
-var Handlebars = require('handlebars/runtime');
-var templates = require(__dirname + '/views.js');
+var Handlebars = require('handlebars/runtime')
+var templates = require(__dirname + '/views.js')
+var ihcTests = require('ihc-test')
 
 module.exports.build = (data, callback) => {
+    data.ihcTests = ihcTests
     Handlebars.registerPartial('ihc/page', Handlebars.templates['ihc/page'])
     Handlebars.registerPartial('style', Handlebars.templates['style'])
-
     Handlebars.registerPartial('layouts/base', Handlebars.templates['layouts/base'])
     Handlebars.registerPartial('oncology/header', Handlebars.templates['oncology/header'])
     Handlebars.registerPartial('oncology/clientandpatient-info', Handlebars.templates['oncology/clientandpatient-info'])
