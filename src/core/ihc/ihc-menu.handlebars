@@ -1,11 +1,19 @@
 <div class="oncoBox" style="width: 216mm; height: 103.5mm; border: none; border-left: 2px solid; border-right: 2px solid;">
 <div class="heading" style="width: 214mm; height: 4.75mm; background-color: silver; color: black; text-align: left; padding-left: 2mm; line-height: 1.25;">IHC Test Menu</div>
-<div class="whiteBox" style="width: 35mm; height: 29mm; border: none;">
-  <div class="whiteBox" style="width: 35mm; height: 1.5mm; border: none; line-height: 1.5;"></div>
-
-    <div class="whiteBox" style="width: 41mm; height: 3mm; border: none; text-align: left;">{{ihcTests.groups.0.name}}</div>
-    {{#each ihcTests.groups.0.tests}}
-      <div class="whiteBox" style="width: 41mm; height: 3mm; border: none; text-align: left;">{{name}}</div>
-    {{/each}}
+<div class="whiteBox" style="width: 40mm; height: 50mm; border: none;">
+  <div class="whiteBox" style="width: 38mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold;">{{ihcTests.groups.0.name}}</div>
+  {{#each ihcTests.groups.0.tests}}
+    <div class="oncoBox" style="width: 5mm; height: 3.5mm; border: none; line-height: 1.5;">
+      <div class="checkBox"></div>
+    </div>
+    <div class="whiteBox" style="width: 35mm; height: 3.5mm; border: none; text-align: left; line-height: 1;">{{name}}</div>
+  {{/each}}
+  <div class="whiteBox" style="width: 38mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold;">{{ihcTests.groups.1.name}}</div>
+  {{#each ihcTests.groups.1.tests}}
+    <div class="oncoBox" style="width: 5mm; height: 3.5mm; border: none; line-height: 1.5;">
+      <div class="checkBox"></div>
+    </div>
+    <div class="whiteBox" style="width: 35mm; height: 3.5mm; border: none; text-align: left; line-height: 1;">{{name}}</div>
+  {{/each}}
 </div>
 </div>

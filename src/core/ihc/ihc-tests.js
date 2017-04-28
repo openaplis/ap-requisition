@@ -16,23 +16,23 @@ module.exports = {
         { name: 'MOC 31' }
       ]
     },
-    {      
+    {
       name: 'Site Specific Tumor Markers',
         tests: [
-          { test: 'Napsin A' },
-          { test: 'Thyroglobulin' },
-          { test: 'TTF-1' },
-          { test: 'CA 19-9' },
-          { test: 'CA 125' },
-          { test: 'Calretinin' },
-          { test: 'CEA' },
-          { test: 'Placental Alkaline Phosphatase' },
-          { test: 'RCC' },
-          { test: 'Hepatocyte Specific Antigen' },
-          { test: 'PAX-8' },
-          { test: 'Glypican 3' },
-          { test: 'GATA-3' },
-          { test: 'P40' }
+          { name: 'Napsin A' },
+          { name: 'Thyroglobulin' },
+          { name: 'TTF-1' },
+          { name: 'CA 19-9' },
+          { name: 'CA 125' },
+          { name: 'Calretinin' },
+          { name: 'CEA' },
+          { name: 'Placental Alkaline Phosphatase' },
+          { name: 'RCC' },
+          { name: 'Hepatocyte Specific Antigen' },
+          { name: 'PAX-8' },
+          { name: 'Glypican 3' },
+          { name: 'GATA-3' },
+          { name: 'P40' }
         ]
     }
   ]
