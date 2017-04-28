@@ -3,22 +3,20 @@
 module.exports = {
   groups: [
     {
-      id: 1,
       name: 'Epithelial',
       tests: [
-        { test: 'Pancytokeratin' },
-        { test: 'OSCAR' },
-        { test: 'Cytokeratin 5/6' },
-        { test: 'Cytokeratin 7' },
-        { test: 'Cytokeratin 20' },
-        { test: 'Cytokeratin 34' },
-        { test: 'EMA' },
-        { test: 'E-cadherin' },
-        { test: 'MOC 31' }
+        { name: 'Pancytokeratin' },
+        { name: 'OSCAR' },
+        { name: 'Cytokeratin 5/6' },
+        { name: 'Cytokeratin 7' },
+        { name: 'Cytokeratin 20' },
+        { name: 'Cytokeratin 34' },
+        { name: 'EMA' },
+        { name: 'E-cadherin' },
+        { name: 'MOC 31' }
       ]
     },
-    {
-      id: 2,
+    {      
       name: 'Site Specific Tumor Markers',
         tests: [
           { test: 'Napsin A' },

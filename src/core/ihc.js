@@ -1,9 +1,10 @@
 'use strict'
 
 var fs = require('fs')
+var path = require('path')
 var Handlebars = require('handlebars/runtime')
 var templates = require(__dirname + '/views.js')
-var ihcTests = require('ihc-test')
+var ihcTests = require(path.join(__dirname, 'ihc', 'ihc-tests'))
 
 module.exports.build = (data, callback) => {
     data.ihcTests = ihcTests
