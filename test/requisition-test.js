@@ -90,4 +90,17 @@ describe('gynCytologyReq', function() {
     })
   })
 
+  describe('ihcReq', function() {
+    it('testing ihcReq', function(done) {
+      requisitions.ihcReq.build(inputData, function (err, result) {
+        assert.notEqual(result, null)
+        var requisitionPath = './requisitions/ihc-req.html'
+        fs.writeFile(requisitionPath, result, function (err) {
+          if(err) console.log(err)
+          done()
+        })
+      })
+    })
+  })
+
 })
