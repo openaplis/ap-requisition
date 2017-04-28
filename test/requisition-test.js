@@ -7,10 +7,18 @@ const requisitions  = require('../src/index.js')
 
 var inputData = require(path.join(__dirname, 'input-data'))
 
-describe('gynCytologyReq', function() {  
+describe('gynCytologyReq', function() {
+
+  before(function(done) {
+    inputData.build(function (err, data) {
+      if(err) return err
+      inputData = data;
+      done()
+    })
+  })
 
   describe('gynCytologyReq', function() {
-    it('testing gynCytologyReq', function(done) {
+    it('testing gynCytologyReq', function(done) {      
       requisitions.gynCytologyReq.build(inputData, function (err, result) {
         if(err) consoel.log(err)
         assert.notEqual(result, null)
