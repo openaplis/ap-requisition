@@ -64,20 +64,80 @@ templates['gyn-cytology-req/specimen-info'] = template({"compiler":[7,">= 4.0.0"
 templates['ihc/ihc-menu'] = template({"1":function(container,depth0,helpers,partials,data) {
     var helper;
 
-  return "    <div class=\"oncoBox\" style=\"width: 5mm; height: 3.5mm; border: none; line-height: 1.5;\">\r\n      <div class=\"checkBox\"></div>\r\n    </div>\r\n    <div class=\"whiteBox\" style=\"width: 35mm; height: 3.5mm; border: none; text-align: left; line-height: 1;\">"
+  return "    <div class=\"oncoBox\" style=\"width: 5mm; height: 3.25mm; border: none; line-height: 1.5;\">\r\n      <div class=\"checkBox\"></div>\r\n    </div>\r\n    <div class=\"whiteBox\" style=\"width: 45mm; height: 3.25mm; border: none; text-align: left; line-height: 1;\">"
+    + container.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"name","hash":{},"data":data}) : helper)))
+    + "</div>\r\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "    <div class=\"oncoBox\" style=\"width: 5mm; height: 3.25mm; border: none; line-height: 1.5;\">\r\n      <div class=\"checkBox\"></div>\r\n    </div>\r\n    <div class=\"whiteBox\" style=\"width: 30mm; height: 3.25mm; border: none; text-align: left; line-height: 1;\">"
+    + container.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"name","hash":{},"data":data}) : helper)))
+    + "</div>\r\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "    <div class=\"oncoBox\" style=\"width: 5mm; height: 3.25mm; border: none; line-height: 1.5;\">\r\n      <div class=\"checkBox\"></div>\r\n    </div>\r\n    <div class=\"whiteBox\" style=\"width: 35mm; height: 3.25mm; border: none; text-align: left; line-height: 1;\">"
     + container.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"name","hash":{},"data":data}) : helper)))
     + "</div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : {};
 
-  return "<div class=\"oncoBox\" style=\"width: 216mm; height: 103.5mm; border: none; border-left: 2px solid; border-right: 2px solid;\">\r\n<div class=\"heading\" style=\"width: 214mm; height: 4.75mm; background-color: silver; color: black; text-align: left; padding-left: 2mm; line-height: 1.25;\">IHC Test Menu</div>\r\n<div class=\"whiteBox\" style=\"width: 40mm; height: 50mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"width: 38mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold;\">"
+  return "<div class=\"oncoBox\" style=\"width: 216mm; height: 103.5mm; border: none; border-left: 2px solid; border-right: 2px solid;\">\r\n<div class=\"heading\" style=\"width: 214mm; height: 4.75mm; background-color: silver; color: black; text-align: left; padding-left: 2mm; line-height: 1.25;\">IHC Test Menu</div>\r\n<div class=\"whiteBox\" style=\"width: 50mm; height: 95mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"width: 48mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["0"] : stack1)) != null ? stack1.name : stack1), depth0))
     + "</div>\r\n"
     + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["0"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "  <div class=\"whiteBox\" style=\"width: 38mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold;\">"
+    + "  <div class=\"whiteBox\" style=\"width: 48mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["1"] : stack1)) != null ? stack1.name : stack1), depth0))
     + "</div>\r\n"
     + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["1"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</div>\r\n<div class=\"whiteBox\" style=\"width: 50mm; height: 95mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"width: 48mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["2"] : stack1)) != null ? stack1.name : stack1), depth0))
+    + "</div>\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["2"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "  <div class=\"whiteBox\" style=\"width: 48mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["3"] : stack1)) != null ? stack1.name : stack1), depth0))
+    + "</div>\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["3"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "  <div class=\"whiteBox\" style=\"width: 48mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["4"] : stack1)) != null ? stack1.name : stack1), depth0))
+    + "</div>\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["4"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "  <div class=\"whiteBox\" style=\"width: 48mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["5"] : stack1)) != null ? stack1.name : stack1), depth0))
+    + "</div>\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["5"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "  <div class=\"whiteBox\" style=\"width: 48mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["6"] : stack1)) != null ? stack1.name : stack1), depth0))
+    + "</div>\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["6"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</div>\r\n<div class=\"whiteBox\" style=\"width: 35mm; height: 95mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"width: 33mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["7"] : stack1)) != null ? stack1.name : stack1), depth0))
+    + "</div>\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["7"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</div>\r\n<div class=\"whiteBox\" style=\"width: 40mm; height: 95mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"width: 38mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["8"] : stack1)) != null ? stack1.name : stack1), depth0))
+    + "</div>\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["8"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "  <div class=\"whiteBox\" style=\"width: 38mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["9"] : stack1)) != null ? stack1.name : stack1), depth0))
+    + "</div>\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["9"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "  <div class=\"whiteBox\" style=\"width: 38mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["10"] : stack1)) != null ? stack1.name : stack1), depth0))
+    + "</div>\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["10"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "  <div class=\"whiteBox\" style=\"width: 38mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["11"] : stack1)) != null ? stack1.name : stack1), depth0))
+    + "</div>\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["11"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</div>\r\n<div class=\"whiteBox\" style=\"width: 40mm; height: 95mm; border: none;\">\r\n  <div class=\"whiteBox\" style=\"width: 38mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["12"] : stack1)) != null ? stack1.name : stack1), depth0))
+    + "</div>\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["12"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "  <div class=\"whiteBox\" style=\"width: 38mm; height: 6mm; border: none; text-align: left; line-height: 2; padding-left: 2mm; font-weight: bold; font-size: 8pt;\">"
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["13"] : stack1)) != null ? stack1.name : stack1), depth0))
+    + "</div>\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.ihcTests : depth0)) != null ? stack1.groups : stack1)) != null ? stack1["13"] : stack1)) != null ? stack1.tests : stack1),{"name":"each","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "</div>\r\n</div>\r\n";
 },"useData":true});
 templates['ihc/page'] = template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
