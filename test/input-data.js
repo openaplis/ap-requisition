@@ -32,12 +32,12 @@ module.exports.build = function (callback) {
       }
     ],
     pathologist: [
-      "Mickey M. Mouse, MD, FCAP",
-      "Donald A. Duck, MD, FCAP",
-      "Minnie C. Mouse, MD, FCAP",
-      "Goofy G. Goof, MD, FCAP",
-      "Proky P. Pig, MD, FCAP",
-      "Walt G. Disney, MD, FCAP"
+      'Mickey M. Mouse, MD, FCAP',
+      'Donald A. Duck, MD, FCAP',
+      'Minnie C. Mouse, MD, FCAP',
+      'Goofy G. Goof, MD, FCAP',
+      'Proky P. Pig, MD, FCAP',
+      'Walt G. Disney, MD, FCAP'
     ]
   }
 
@@ -45,17 +45,16 @@ module.exports.build = function (callback) {
     ['./images/imagea.jpg', './images/imageb.jpg'],
     function (fileName, cb) {
       fs.readFile(fileName, function (err, content) {
-        if(err) return console.log(err)
+        if (err) return console.log(err)
         images64.push(content.toString('base64'))
         cb(null)
       })
     },
     function (err) {
-      if(err) return callback(err)
+      if (err) return callback(err)
       data.logoImage = images64[0]
       data.neoImage = images64[1]
       callback(null, data)
     }
   )
-
 }

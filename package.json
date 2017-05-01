@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "build-style": "node build-style.js",
-    "build-views": "handlebars ./src/core -f ./src/core/views.js -c handlebars/runtime"
+    "build-views": "handlebars ./src/core -f ./src/core/views.js -c handlebars/runtime",
+    "standard": "standard"
   },
   "repository": {
     "type": "git",

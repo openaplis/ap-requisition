@@ -18,7 +18,7 @@ module.exports = {
     },
     {
       name: 'Site Specific Tumor Markers',
-        tests: [
+      tests: [
           { name: 'Napsin A' },
           { name: 'Thyroglobulin' },
           { name: 'TTF-1' },
@@ -33,11 +33,11 @@ module.exports = {
           { name: 'Glypican 3' },
           { name: 'GATA-3' },
           { name: 'P40' }
-        ]
+      ]
     },
     {
       name: 'Breast',
-        tests: [
+      tests: [
           { name: 'Invasive Breast Panel' },
           { name: 'DCIS Breast Panel' },
           { name: 'Estrogen Receptor' },
@@ -46,40 +46,40 @@ module.exports = {
           { name: 'Smooth Muscle Myosin' },
           { name: 'Mammoglobin' },
           { name: 'GCDFP-15' }
-        ]
+      ]
     },
     {
       name: 'Colon',
-        tests: [
+      tests: [
           { name: 'CDX-2' },
           { name: 'Villin' }
-        ]
+      ]
     },
     {
       name: 'Infectious Diseases',
-        tests: [
+      tests: [
           { name: 'Helicobacter pylori' },
           { name: 'Cytomegalovirus' }
-        ]
+      ]
     },
     {
       name: 'Proliferation Cell Cycle Markers',
-        tests: [
+      tests: [
           { name: 'Ki-67' },
           { name: 'P16' },
           { name: 'P53' }
-        ]
+      ]
     },
     {
       name: 'Miscellaneous',
-        tests: [
+      tests: [
           { name: 'WT-1' },
           { name: 'D2-40' }
-        ]
+      ]
     },
     {
       name: 'Hematopoietic',
-        tests: [
+      tests: [
           { name: 'CD3' },
           { name: 'CD4' },
           { name: 'CD5' },
@@ -107,48 +107,48 @@ module.exports = {
           { name: 'Myeloperoxidase' },
           { name: 'TdT' },
           { name: 'PAX-5' }
-        ]
+      ]
     },
     {
       name: 'Melanoma',
-        tests: [
+      tests: [
           { name: 'S100' },
           { name: 'Melan A' },
           { name: 'HMB-45' },
           { name: 'SOX-10' }
-        ]
+      ]
     },
     {
       name: 'Neural',
-        tests: [
+      tests: [
           { name: 'CD56' },
           { name: 'S100' },
           { name: 'Chromogranin' },
           { name: 'Synaptophysin' },
           { name: 'GFAP' }
-        ]
+      ]
     },
     {
       name: 'Soft Tissue Mesenchymal',
-        tests: [
+      tests: [
           { name: 'Smooth Muscle Myosin' },
           { name: 'Desmin' },
           { name: 'Factor XIIIa' },
           { name: 'CD117' },
           { name: 'DOG-1' },
           { name: 'Beta-Catenin' }
-        ]
+      ]
     },
     {
       name: 'Prostate',
-        tests: [
+      tests: [
           { name: 'NKX3.1' },
           { name: 'P504s' }
-        ]
+      ]
     },
     {
       name: 'Cytocehmical',
-        tests: [
+      tests: [
           { name: 'Acid Fast' },
           { name: 'Alcian Blue' },
           { name: 'Congo Red' },
@@ -168,17 +168,17 @@ module.exports = {
           { name: 'Reticulin' },
           { name: 'Steiner and Steiner' },
           { name: 'Trichrome' }
-        ]
+      ]
     },
     {
       name: 'Liver Panel',
-        tests: [
+      tests: [
           { name: 'Trichrome' },
           { name: 'Iron' },
           { name: 'Pas with diastase' },
           { name: 'Reticulin' },
           { name: 'Copper rhodanine' }
-        ]
-    },
+      ]
+    }
   ]
 }
