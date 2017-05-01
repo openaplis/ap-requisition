@@ -2,16 +2,16 @@
   <div class="whiteBox" style="width: 216.5mm; height: 20mm; border: none; text-align: left;">
     <img src="data:image/jpg;base64,{{logoImage}}" alt="logo" style="width:45mm; height:18mm; padding-left: 1mm; padding-top: 1mm;">
   </div>
-  <div class="whiteBox" style="width: 45mm; height: 40mm; border: none; text-align: left;">
-    <div class="headerBox" style="width: 46mm; height: 3mm; border: none; text-align: center;">{{address1line1}}</div>
-    <div class="headerBox" style="width: 46mm; height: 3mm; border: none; text-align: center;">{{address1line2}}</div>
-    <div class="headerBox" style="width: 46mm; height: 3mm; border: none; text-align: center;">{{phone1}}</div>
-    <div class="headerBox" style="width: 46mm; height: 3mm; border: none; text-align: center;">{{fax}}</div>
-    <div class="headerBox" style="width: 46mm; height: 3mm; border: none; text-align: center;">{{phone2}}</div>
-    <div class="headerBox" style="width: 46mm; height: 3mm; border: none; text-align: center;">{{address2line1}}</div>
-    <div class="headerBox" style="width: 46mm; height: 5mm; border: none; text-align: center;">{{address2line2}}</div>
+  <div class="whiteBox" style="width: 60mm; height: 40mm; border: none; text-align: left;">
+    <div class="headerBox" style="width: 59mm; height: 3mm; border: none; text-align: center;">{{addresses.0.addressline1}}</div>
+    <div class="headerBox" style="width: 59mm; height: 3mm; border: none; text-align: center;">{{addresses.0.city}}, {{addresses.0.state}} {{addresses.0.zip}}</div>
+    <div class="headerBox" style="width: 59mm; height: 3mm; border: none; text-align: center;">Toll Free: {{addresses.0.tollfree}} &#8226 Phone: {{addresses.0.phone}}</div>
+    <div class="headerBox" style="width: 59mm; height: 3mm; border: none; text-align: center;">Fax: {{addresses.0.fax}}</div>
+    <div class="headerBox" style="width: 59mm; height: 3mm; border: none; text-align: center;">{{addresses.1.phone}}</div>
+    <div class="headerBox" style="width: 59mm; height: 3mm; border: none; text-align: center;">{{addresses.1.addressline1}}</div>
+    <div class="headerBox" style="width: 59mm; height: 5mm; border: none; text-align: center;">{{addresses.1.city}}, {{addresses.1.state}} {{addresses.1.zip}}</div>
   </div>
-  <div class="whiteBox" style="width: 43mm; height: 40mm; border: none; text-align: left;">
+  <div class="whiteBox" style="width: 28mm; height: 40mm; border: none; text-align: left;">
     {{#each pathologist}}
     <div class="headerBox" style="width: 41mm; height: 3mm; border: none; text-align: left;">{{this}}</div>
     {{/each}}
