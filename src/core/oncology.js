@@ -1,7 +1,8 @@
 'use strict'
 
 var Handlebars = require('handlebars/runtime')
-var templates = require(__dirname + '/views.js')
+var path = require('path')
+var views = require(path.join(__dirname, '/views.js'))
 
 module.exports.build = (data, callback) => {
   Handlebars.registerPartial('oncology/page', Handlebars.templates['oncology/page'])
