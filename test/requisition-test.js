@@ -1,3 +1,5 @@
+/* global describe it before */
+
 const assert = require('chai').assert
 const path = require('path')
 const fs = require('fs')
