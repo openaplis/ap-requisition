@@ -44,8 +44,7 @@ module.exports = {
           { name: 'Progesterone Receptor' },
           { name: 'HER2 (D-ISH)' },
           { name: 'Smooth Muscle Myosin' },
-          { name: 'Mammoglobin' },
-          { name: 'GCDFP-15' }
+          { name: 'Mammoglobin' }
       ]
     },
     {
@@ -147,12 +146,12 @@ module.exports = {
       ]
     },
     {
-      name: 'Cytocehmical',
+      name: 'Cytochemical',
       tests: [
           { name: 'Acid Fast' },
           { name: 'Alcian Blue' },
           { name: 'Congo Red' },
-          { name: 'Copper rhodanine' },
+          { name: 'Copper Rhodanine' },
           { name: 'Elastic' },
           { name: 'Fites' },
           { name: 'GMS' },
@@ -162,9 +161,9 @@ module.exports = {
           { name: 'Mucin' },
           { name: 'Oil Red O' },
           { name: 'PAS' },
-          { name: 'PAS alcian blue' },
-          { name: 'PAS for fungus' },
-          { name: 'PAS with diastase' },
+          { name: 'PAS Alcian Blue' },
+          { name: 'PAS for Fungus' },
+          { name: 'PAS with Diastase' },
           { name: 'Reticulin' },
           { name: 'Steiner and Steiner' },
           { name: 'Trichrome' }
@@ -175,9 +174,9 @@ module.exports = {
       tests: [
           { name: 'Trichrome' },
           { name: 'Iron' },
-          { name: 'Pas with diastase' },
+          { name: 'Pas with Diastase' },
           { name: 'Reticulin' },
-          { name: 'Copper rhodanine' }
+          { name: 'Copper Rhodanine' }
       ]
     }
   ]
