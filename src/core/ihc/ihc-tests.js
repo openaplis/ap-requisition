@@ -17,6 +17,44 @@ module.exports = {
       ]
     },
     {
+      name: 'Colon',
+      tests: [
+          { name: 'CDX-2' },
+          { name: 'Villin' }
+      ]
+    },
+    {
+      name: 'Neural',
+      tests: [
+          { name: 'CD56' },
+          { name: 'S100' },
+          { name: 'Chromogranin' },
+          { name: 'Synaptophysin' },
+          { name: 'GFAP' }
+      ]
+    },
+    {
+      name: 'Infectious Diseases',
+      tests: [
+          { name: 'Helicobacter pylori' },
+          { name: 'Cytomegalovirus' }
+      ]
+    },
+    {
+      name: 'Miscellaneous',
+      tests: [
+          { name: 'WT-1' },
+          { name: 'D2-40' }
+      ]
+    },
+    {
+      name: 'Prostate',
+      tests: [
+          { name: 'NKX3.1' },
+          { name: 'P504s' }
+      ]
+    },
+    {
       name: 'Site Specific Tumor Markers',
       tests: [
           { name: 'Napsin A' },
@@ -36,44 +74,15 @@ module.exports = {
       ]
     },
     {
-      name: 'Breast',
+      name: 'Dual Stains',
       tests: [
-          { name: 'Invasive Breast Panel' },
-          { name: 'DCIS Breast Panel' },
-          { name: 'Estrogen Receptor' },
-          { name: 'Progesterone Receptor' },
-          { name: 'HER2 (D-ISH)' },
-          { name: 'Smooth Muscle Myosin' },
-          { name: 'Mammoglobin' }
-      ]
-    },
-    {
-      name: 'Colon',
-      tests: [
-          { name: 'CDX-2' },
-          { name: 'Villin' }
-      ]
-    },
-    {
-      name: 'Infectious Diseases',
-      tests: [
-          { name: 'Helicobacter pylori' },
-          { name: 'Cytomegalovirus' }
-      ]
-    },
-    {
-      name: 'Proliferation Cell Cycle Markers',
-      tests: [
-          { name: 'Ki-67' },
-          { name: 'P16' },
-          { name: 'P53' }
-      ]
-    },
-    {
-      name: 'Miscellaneous',
-      tests: [
-          { name: 'WT-1' },
-          { name: 'D2-40' }
+          { name: 'Ki-67/Semi-quantitative' },
+          { name: 'Cytokeratin 34/P504s racemase' },
+          { name: 'CD3/CD20' },
+          { name: 'Ig Kappa/Ig Lambda' },
+          { name: 'PAX-5/Zap-70' },
+          { name: 'OSCAR/Smooth Muscle Myosin' },
+          { name: 'TTF-1/Napsin' }
       ]
     },
     {
@@ -118,13 +127,15 @@ module.exports = {
       ]
     },
     {
-      name: 'Neural',
+      name: 'Breast',
       tests: [
-          { name: 'CD56' },
-          { name: 'S100' },
-          { name: 'Chromogranin' },
-          { name: 'Synaptophysin' },
-          { name: 'GFAP' }
+          { name: 'Invasive Breast Panel' },
+          { name: 'DCIS Breast Panel' },
+          { name: 'Estrogen Receptor' },
+          { name: 'Progesterone Receptor' },
+          { name: 'HER2 (D-ISH)' },
+          { name: 'Smooth Muscle Myosin' },
+          { name: 'Mammoglobin' }
       ]
     },
     {
@@ -139,10 +150,11 @@ module.exports = {
       ]
     },
     {
-      name: 'Prostate',
+      name: 'Proliferation Cell Cycle Markers',
       tests: [
-          { name: 'NKX3.1' },
-          { name: 'P504s' }
+          { name: 'Ki-67' },
+          { name: 'P16' },
+          { name: 'P53' }
       ]
     },
     {
