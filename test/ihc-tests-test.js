@@ -1,3 +1,5 @@
+/* global describe it  */
+
 const assert = require('chai').assert
 const ihcTests = require('../src/core/ihc/ihc-tests.js')
 

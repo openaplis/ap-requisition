@@ -3,8 +3,7 @@
 var fs = require('fs')
 var Handlebars = require('handlebars/runtime')
 var path = require('path')
-
-var templates = require(path.join(__dirname, '/views.js'))
+var views = require(path.join(__dirname, '/views.js'))
 var cervixDiagramPath = (path.join(__dirname, '/images/cervix-diagram.jpg'))
 
 module.exports.build = (data, callback) => {
