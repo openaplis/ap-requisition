@@ -76,13 +76,13 @@ module.exports = {
     {
       name: 'Dual Stains',
       tests: [
-          { name: 'Ki-67/Semi-quantitative' },
-          { name: 'Cytokeratin 34/P504s racemase' },
-          { name: 'CD3/CD20' },
-          { name: 'Ig Kappa/Ig Lambda' },
-          { name: 'PAX-5/Zap-70' },
-          { name: 'OSCAR/Smooth Muscle Myosin' },
-          { name: 'TTF-1/Napsin' }
+          { name: 'Ki-67 / Semi-quantitative' },
+          { name: 'Cytokeratin 34 / P504s racemase' },
+          { name: 'CD3 / CD20' },
+          { name: 'Ig Kappa / Ig Lambda' },
+          { name: 'PAX-5 / Zap-70' },
+          { name: 'OSCAR / Smooth Muscle Myosin' },
+          { name: 'TTF-1 / Napsin' }
       ]
     },
     {
