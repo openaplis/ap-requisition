@@ -72,4 +72,18 @@ describe('gynCytologyReq', function () {
       })
     })
   })
+
+  describe('researchTestingReq', function () {
+    it('testing researchTestingReq', function (done) {
+      requisitions.researchTestingReq.build(inputData, function (err, result) {
+        if (err) console.log(err)
+        assert.notEqual(result, null)
+        var requisitionPath = './requisitions/research-testing-req.html'
+        fs.writeFile(requisitionPath, result, function (err) {
+          if (err) console.log(err)
+          done()
+        })
+      })
+    })
+  })
 })
