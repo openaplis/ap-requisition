@@ -38,7 +38,26 @@ module.exports.build = function (callback) {
       'Goofy G. Goof, MD, FCAP',
       'Proky P. Pig, MD, FCAP',
       'Walt G. Disney, MD, FCAP'
-    ]
+    ],
+    providers: [
+      'Aimee Brown, PA-C',
+      'Chad Abbey, D.O.',
+      'D. Chimene Dahl, M.D.',
+      'Halfdan W. Forseth, M.D.',
+      'Julianna Papez, D.O.',
+      'Kris Miller, APRN',
+      'Kyla Carlson, D.O.',
+      'Pamela Templeton, M.D.',
+      'Rindo R. Sironi, M.D.'
+    ],
+    client: {
+      clientname: 'Billings OB/GYN Associates',
+      addressline1: '1611 Zimmerman',
+      city: 'Billings',
+      state: 'MT',
+      zip: '59102',
+      phone: '(406) 248-3607'
+    }
   }
 
   async.eachSeries(
