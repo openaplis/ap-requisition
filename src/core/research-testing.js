@@ -11,7 +11,7 @@ module.exports.build = (data, callback) => {
   Handlebars.registerPartial('layouts/base', Handlebars.templates['layouts/base'])
   Handlebars.registerPartial('researchTesting/header', Handlebars.templates['researchTesting/header'])
   Handlebars.registerPartial('researchTesting/clientandpatient-info', Handlebars.templates['researchTesting/clientandpatient-info'])
-  Handlebars.registerPartial('oncology/consult', Handlebars.templates['oncology/consult'])
+  Handlebars.registerPartial('researchTesting/consult', Handlebars.templates['researchTesting/consult'])
   Handlebars.registerPartial('oncology/hematology-menu', Handlebars.templates['oncology/hematology-menu'])
   Handlebars.registerPartial('oncology/solid-tumor-menu', Handlebars.templates['oncology/solid-tumor-menu'])
 
